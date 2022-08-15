@@ -136,13 +136,25 @@ h2 {
     margin: 2px 3px;
     border-color:rgba(203, 85, 43, 0.734);
     border-radius: 3px;
+    transition: all 1s;
+}
+.name:focus{
+    font-size: 18px;
+    border: 5px dotted #333;
+    color: #F089A0;
 }
 
 .texto1{
     margin: 4px 3px 7px;
     border-color:rgba(205, 63, 7, 0.939);
     border-radius: 5px;
-    
+    transition: all 1s;
+}
+
+.texto1:focus{
+    font-size: 18px;
+    border: 5px dotted #ea94a6;
+    color: #F089A0;
 }
 
 .enviar1{
