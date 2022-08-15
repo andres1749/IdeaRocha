@@ -1,0 +1,835 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ----------encabezado.---navegacion------- */
+.header {
+    background-color: #F089A0;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+main {
+    margin: 50px 20px 20px;
+}
+
+.logo {
+    display: flex;
+    margin-left: 30px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.logo img {
+    border-radius: 50px;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+.nav-menu-link {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 20px;
+    line-height: 60px;
+    width: max-content;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-link {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav-menu-link:hover {
+    background-color: #fcf69c99;
+    transition: 0.5s;
+}
+
+/*------------------video youtube pag inicio------------------ */
+.youtube {
+    display: flex;
+    justify-content: center;
+    margin-right: 250px;
+}
+
+/* ------------------------img pag tienda------------------- */
+.img {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 20px;
+
+}
+
+/* ------------encabezados--------------- */
+h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #F089A0;
+    margin: 20px;
+    padding-top: 20px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0px 30px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: #F089A0;
+}
+
+.h2class {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+/*------------------------formulario page nosotros----------------------- */
+.formulario {
+    display: grid;
+    width: 250px;
+    margin: 20px auto;
+    border: 1px solid;
+    border-radius: 5px;
+    background-color: #fcf69c99;
+}
+
+.formulario label {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 15px;
+    
+}
+.name{
+    margin: 2px 3px;
+    border-color:rgba(203, 85, 43, 0.734);
+    border-radius: 3px;
+}
+
+.texto1{
+    margin: 4px 3px 7px;
+    border-color:rgba(205, 63, 7, 0.939);
+    border-radius: 5px;
+    
+}
+
+.enviar1{
+    width: 50px;
+    margin-left: 97px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.enviar1:hover{
+    background-color: #ea94a6;
+    transition: 1,8 ;
+}
+
+/* -----------------------------formulario contacto-------------------------------- */
+.formap {
+    display: flex;
+    justify-content: center;
+}
+
+.fieldset1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: 5px solid #F089A0;
+    margin: 30px 15px 10px;
+    padding: 15px 10px;
+    width: 50%;
+    font-family: cursive;
+    text-transform: capitalize;
+}
+
+#nombre {
+    background-color: #F089A0;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#apellido {
+    background-color: #F089A0;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#email {
+    background-color: #F089A0;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#pass {
+    background-color: #F089A0;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#file {
+    background-color: #F089A0;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+#area {
+    background-color: #F089A0;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px;
+    padding: 3px;
+}
+
+#submit {
+    background-color: #F089A0;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px;
+    width: 100%;
+}
+
+#reset {
+    background-color: #F089A0;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px;
+    width: 100%;
+}
+
+.enviar {
+    letter-spacing: 50px;
+    padding: 20px;
+}
+
+h4 {
+    color: #333;
+    text-transform: capitalize;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+
+/* ---------------------------mapa contacto------------------------ */
+
+.correr {
+    background-image: url(../fotos/2\ mujeres\ correindo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.sectionmap {
+    display: flex;
+    min-height: 300px;
+}
+
+.mapa {
+    margin-top: 20px;
+    width: 50%;
+    border-radius: 5px;
+    border-style: groove;
+}
+
+/* ----------------------------------------pag bikini-------------------------- */
+
+.bikinis {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 200px);
+    grid-gap: 20px;
+    padding: 20px;
+
+}
+
+.item {
+    border: 2px solid #333;
+    width: 100%;
+}
+
+.item1 {
+    background-image: url(../fotos/bikini\ agua.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item2 {
+    background-image: url(../fotos/bikini\ arena.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3 {
+    background-image: url(../fotos/bikini\ rocas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4 {
+    background-image: url(../fotos/mujer\ estirando.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item5 {
+    background-image: url(../fotos/salto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item6 {
+    background-image: url(../fotos/yoga.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* -------------------pag sport------------- */
+.sport {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, 200px);
+    grid-gap: 15px;
+    padding: 10px;
+}
+
+.calzas1 {
+    background-image: url(../fotos/prensa\ piernas.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.calzas2 {
+    background-image: url(../fotos/2\ mujeres\ ejercicio.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.calzas3 {
+    background-image: url(../fotos/abdominal\ pesa.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.calzas4 {
+    background-image: url(../fotos/abdominales.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.calzas5 {
+    background-image: url(../fotos/mujer\ mancuerna.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.calzas6 {
+    background-image: url(../fotos/espalda.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.calzas7 {
+    background-image: url(../fotos/escalando\ roca.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+.calzas8 {
+    background-image: url(../fotos/estirar\ casacada\ agua.jpg);
+    background-size: cover;
+    background-position: center
+}
+
+/* -----------------footer--------------------- */
+footer {
+    background-color: #F089A0;
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+footer i {
+    font-size: 30px;
+    letter-spacing: 40px;
+}
+
+.face {
+    color: #fff;
+}
+
+.insta {
+    color: #fff;
+}
+
+.wsp {
+    color: #fff;
+}
+
+/* -----------------------------media query------------------------------------- */
+/* -----------------------------responsive------------------------------------- */
+/* -------------------------------INICIO------------------------------------- */
+@media only screen and (min-width:380px) and (max-width:960px) {
+    .header {
+        height: 50px;
+    }
+
+    .logo {
+        font-size: 16px;
+        margin-left: 5px;
+    }
+
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .fa-bars {
+        font-size: 30px;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        background-color: #F089A0;
+        padding-left: 130px;
+    }
+
+    .nav-menu-link {
+        font-size: 15px;
+        line-height: 50px;
+    }
+
+    .nav-menu:hover {
+        display: block;
+    }
+
+    .fa-bars:active ul {
+        display: block;
+    }
+
+    .subitem {
+        padding: 13px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .youtube {
+        margin-left: 170px;
+        margin-bottom: 20px;
+    }
+
+    .img img {
+        width: 330px;
+        border-radius: 10px;
+    }
+
+
+    footer {
+        font-size: 15px;
+        padding: 10px;
+        text-transform: capitalize;
+        width: 100%;
+    }
+
+    footer p {
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    footer i {
+        font-size: 20px;
+        letter-spacing: 20px;
+        margin-left: 10px;
+    }
+
+    /* ----------------------------tablet--------------------------------- */
+}
+
+@media only screen and (min-width:440px) and (max-width:960px) {
+
+    .nav-menu {
+        padding-left: 170px;
+    }
+
+    .youtube {
+        margin-left: 200px;
+    }
+
+    .img img {
+        width: 400px;
+        border-radius: 10px;
+    }
+
+}
+
+@media only screen and (min-width:520px) and (max-width:960px) {
+
+    .nav-menu {
+        padding-left: 190px;
+    }
+
+    .youtube {
+        margin-left: 240px;
+    }
+
+    .bikinis {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);
+    }
+
+    .sport {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 200px);
+    }
+}
+
+@media only screen and (min-width:580px) and (max-width:960px) {
+
+    .nav-menu {
+        padding-left: 230px;
+    }
+
+    .youtube {
+        margin-left: 250px;
+    }
+
+    .img img {
+        width: 450px;
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (min-width:650px) and (max-width:960px) {
+    .nav-menu {
+        padding-left: 260px;
+    }
+
+    .youtube {
+        margin-left: 250px;
+    }
+
+    .youtube iframe {
+        width: 350px;
+        height: 250px;
+    }
+
+}
+
+@media only screen and (min-width:720px) and (max-width:960px) {
+    .header {
+        height: 60px;
+    }
+
+    .logo {
+        font-size: 20px;
+        margin-left: 5px;
+    }
+
+    .logo img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+        color: #fff;
+        padding: 10px 20px 10px 0px;
+    }
+
+    .nav-menu {
+        padding-left: 300px;
+    }
+
+    .youtube {
+        margin-left: 260px;
+    }
+
+    .img img {
+        width: 500px;
+        border-radius: 10px;
+    }
+
+    /* ------------galeria de pag bikinis----------- */
+    .bikinis {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);
+    }
+
+    .item1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .item2 {
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+
+    .item3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .item4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    .item5 {
+        grid-column: 3/4;
+        grid-row: 2/4;
+    }
+
+    .item6 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    /*-------------------finaliza galeria---------------- */
+    /* ---------------galeria pag sport--------------------- */
+    .sport {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 350);
+    }
+
+    .calzas1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .calzas2 {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+
+    .calzas3 {
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+
+    .calzas4 {
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+
+    .calzas5 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+
+    .calzas6 {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+
+    .calzas7 {
+        grid-column: 3/5;
+        grid-row: 3/4;
+    }
+
+    .calzas8 {
+        grid-column: 4/5;
+        grid-row: 4/5
+    }
+
+    /* ------------------finaliza galeria sport----------------- */
+    footer {
+        font-size: 20px;
+    }
+
+    footer i {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width:800px) and (max-width:960px) {
+    .nav-menu {
+        padding-left: 350px;
+    }
+
+    .youtube {
+        margin-left: 230px;
+    }
+}
+
+@media only screen and (min-width:900px) and (max-width: 960px) {
+    .youtube iframe {
+        width: 450px;
+        height: 250px;
+    }
+}
+
+/* ------------------------------notbook--------------------------------- */
+@media only screen and (min-width:961px) {
+    .header {
+        height: 70px;
+    }
+
+    .logo {
+        margin-top: 5px;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    .logo img {
+        border-radius: 50px;
+        margin-right: 10px;
+        height: 60px;
+        width: 60px;
+    }
+
+    .nav-menu-link {
+        font-size: 16px;
+        margin: 0px;
+        line-height: 40px;
+        padding: 8px 20px;
+        border-radius: 3px;
+    }
+
+    .nav-menu {
+        display: flex;
+        margin-right: 10px;
+        list-style: none;
+    }
+
+    .nav i {
+        color: #F089A0;
+    }
+
+    .youtube {
+        margin-left: 250px;
+        margin-bottom: 20px;
+    }
+
+    .youtube iframe {
+        width: 500px;
+        height: 250px;
+    }
+
+    .h1tienda {
+        font-size: 20px;
+    }
+
+    .bikinis {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 250px 250px;
+    }
+
+    .sport {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 230px 230px;
+    }
+}
+
+@media only screen and (min-width:1100px) {
+    .youtube {
+        margin-left: 250px;
+    }
+
+    .item {
+        box-shadow: 1px 1px 5px #333;
+        filter: grayscale(100%);
+    }
+
+    .item:hover {
+        transform: scale(1.05);
+        transition: all 0.9s;
+        filter: grayscale(0%);
+    }
+}
+
+/* --------------------escritorio------------------------------ */
+@media only screen and (min-width:1300px) {
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .nav-menu-link {
+        font-size: 20px;
+        margin: 0px;
+        line-height: 40px;
+        padding: 8px 30px;
+        border-radius: 3px;
+    }
+
+    .youtube iframe {
+        width: 600px;
+        height: 350px;
+    }
+
+    .youtube {
+        margin-left: 250px;
+    }
+
+    .h1tienda {
+        font-size: 24px;
+    }
+
+    .img img {
+        width: 800px;
+    }
+}
