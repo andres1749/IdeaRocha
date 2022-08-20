@@ -6,75 +6,57 @@
 
 body {
     background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 77px auto 133px;
     min-height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* ----------encabezado.---navegacion------- */
 .header {
+    height: 77px;
+    
+}
+
+.bgnav {
     background-color: #F089A0;
-    height: 60px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
 }
 
-main {
-    margin: 50px 20px 20px;
-}
-
-.logo {
-    display: flex;
-    margin-left: 30px;
-    align-items: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    text-decoration: none;
+.nav-link {
+    color: #fff !important;
     text-transform: capitalize;
-    color: #fff;
 }
 
-.logo img {
+.nav-link:hover {
+    background-color: #d7d37c8e;
+    transition: all 1, 95s;
+    border-radius: 10px;
+}
+
+.navbar-brand img {
     border-radius: 50px;
-    margin-right: 10px;
     height: 50px;
     width: 50px;
+
 }
 
-.nav-menu-link {
-    text-transform: capitalize;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 0 20px;
-    line-height: 60px;
-    width: max-content;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #fff
+/* -----------------inicia carrousel----------------------- */
+.carousel .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+.carousel-item img{
+    object-fit: cover;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-menu {
-    display: flex;
-    margin-right: 40px;
-    list-style: none;
-}
-
-.nav-menu-link {
-    padding: 8px 12px;
-    border-radius: 3px;
-}
-
-.nav-menu-link:hover {
-    background-color: #fcf69c99;
-    transition: 0.5s;
+/* -----------------finaliza carrousel----------------------- */
+main {
+    margin: 10px 20px 20px;
 }
 
 /*------------------video youtube pag inicio------------------ */
@@ -89,16 +71,18 @@ main {
     display: flex;
     justify-content: center;
     margin: 30px 0px 20px;
-
+}
+.img img{
+    border-radius: 15px;
 }
 
-/* ------------encabezados--------------- */
-h1 {
+/* ------------encabezados h1 h2 h3 h4 --------------- */
+h1 {  
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #F089A0;
-    margin: 20px;
-    padding-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     text-transform: capitalize;
     text-decoration: underline;
 }
@@ -116,6 +100,14 @@ h2 {
     font-size: 18px;
     margin-bottom: 10px;
 }
+
+h4 {
+    color: #333;
+    text-transform: capitalize;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
 /*------------------------formulario page nosotros----------------------- */
 .formulario {
     display: grid;
@@ -130,134 +122,94 @@ h2 {
     text-align: center;
     text-transform: capitalize;
     font-size: 15px;
-    
+
 }
-.name{
+
+.name {
     margin: 2px 3px;
-    border-color:rgba(203, 85, 43, 0.734);
+    border-color: rgba(203, 85, 43, 0.734);
     border-radius: 3px;
     transition: all 1s;
 }
-.name:focus{
+
+.name:focus {
     font-size: 18px;
     border: 5px dotted #333;
     color: #F089A0;
 }
 
-.texto1{
+.texto1 {
     margin: 4px 3px 7px;
-    border-color:rgba(205, 63, 7, 0.939);
+    border-color: rgba(205, 63, 7, 0.939);
     border-radius: 5px;
     transition: all 1s;
 }
 
-.texto1:focus{
+.texto1:focus {
     font-size: 18px;
     border: 5px dotted #ea94a6;
     color: #F089A0;
 }
 
-.enviar1{
+.enviar1 {
     width: 50px;
     margin-left: 97px;
     margin-bottom: 5px;
     border-radius: 3px;
     background-color: #fff;
 }
-.enviar1:hover{
+
+.enviar1:hover {
     background-color: #ea94a6;
-    transition: 1,8 ;
+    transition: 1, 8;
 }
 
 /* -----------------------------formulario contacto-------------------------------- */
-.formap {
-    display: flex;
-    justify-content: center;
+#send {
+    background-color: #ea94a6;
+    font-weight: bold;
+    border-color: #fff;
+}
+#send:hover{
+    background-color: #2A2929;
+    transition: all 1,5s;
 }
 
-.fieldset1 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    border: 5px solid #F089A0;
-    margin: 30px 15px 10px;
-    padding: 15px 10px;
-    width: 50%;
-    font-family: cursive;
-    text-transform: capitalize;
-}
-
-#nombre {
-    background-color: #F089A0;
-    border: 1px solid;
-    border-radius: 3px;
+#name {
+    border: #edb026 1px solid;
+    color: white;
+    background-color: #2A2929;
+    border-radius: 5px;
     padding: 3px;
 }
 
-#apellido {
-    background-color: #F089A0;
-    border: 1px solid;
-    border-radius: 3px;
+#lastname {
+    border: #edb026 1px solid;
+    color: white;
+    background-color: #2A2929;
+    border-radius: 5px;
     padding: 3px;
 }
 
-#email {
-    background-color: #F089A0;
-    border: 1px solid;
-    border-radius: 3px;
+#emailAddress {
+    border: #edb026 1px solid;
+    color: white;
+    border-radius: 5px;
+    background-color: #2A2929;
     padding: 3px;
 }
 
-#pass {
-    background-color: #F089A0;
-    border: 1px solid;
-    border-radius: 3px;
-    padding: 3px;
+#message {
+    margin-top: 10px;
+    border: #edb026 1px solid;
+    color: white;
+    background-color: #2A2929;
+    border-radius: 5px;
+    padding: 5px;
 }
 
-#file {
-    background-color: #F089A0;
-    border: 1px solid;
-    border-radius: 3px;
-    padding: 3px;
-}
 
-#area {
-    background-color: #F089A0;
-    border: 1px solid;
-    border-radius: 3px;
-    padding: 3px;
-    padding: 3px;
-}
-
-#submit {
-    background-color: #F089A0;
-    border: 1px solid;
-    border-radius: 3px;
-    padding: 3px;
-    width: 100%;
-}
-
-#reset {
-    background-color: #F089A0;
-    border: 1px solid;
-    border-radius: 3px;
-    padding: 3px;
-    width: 100%;
-}
-
-.enviar {
-    letter-spacing: 50px;
-    padding: 20px;
-}
-
-h4 {
-    color: #333;
-    text-transform: capitalize;
-    font-size: 18px;
-    text-decoration: underline;
-}
+/* ---------------finaliza formulario---------- */
 
 
 /* ---------------------------mapa contacto------------------------ */
@@ -431,57 +383,78 @@ footer i {
 /* -----------------------------media query------------------------------------- */
 /* -----------------------------responsive------------------------------------- */
 /* -------------------------------INICIO------------------------------------- */
-@media only screen and (min-width:380px) and (max-width:960px) {
-    .header {
-        height: 50px;
+@media only screen and (min-width:320px) and (max-width:380px) {
+
+    /* BARRA NAVEGACION LOGO */
+    .rufinaBikini {
+        font-size: 18px;
+        margin-right: 0px;
     }
 
-    .logo {
+    .nav-link {
         font-size: 16px;
-        margin-left: 5px;
+        ;
     }
 
-    .logo img {
-        height: 40px;
-        width: 40px;
+    /* CARROUSEL */
+    .carousel-item img {
+        height: 250px;
     }
 
-    .fa-bars {
-        font-size: 30px;
-        color: #fff;
-        padding: 10px;
+    /* ENCABEZADOS */
+    h1 {
+        font-size: 17px;
     }
 
-    .nav-menu {
-        display: none;
-        position: absolute;
-        top: 40px;
-        left: 0;
-        width: 100%;
-        background-color: #F089A0;
-        padding-left: 130px;
-    }
-
-    .nav-menu-link {
+    h2 {
         font-size: 15px;
-        line-height: 50px;
     }
 
-    .nav-menu:hover {
-        display: block;
+    .youtube {
+        margin-left: 140px;
+        margin-bottom: 20px;
     }
 
-    .fa-bars:active ul {
-        display: block;
+    .img img {
+        width: 330px;
+        border-radius: 10px;
     }
 
-    .subitem {
-        padding: 13px;
+
+    footer {
+        font-size: 15px;
+        padding: 10px;
+        text-transform: capitalize;
+        width: 100%;
+    }
+
+    footer p {
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    footer i {
+        font-size: 20px;
+        letter-spacing: 20px;
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (min-width:380px) and (max-width:960px) {
+    .rufinaBikini {
+        font-size: 20px;
+        margin-right: 0px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+    .carousel-item img{
+        height: 250px;
     }
 
     h1 {
-        font-size: 20px;
-        margin-top: 5px;
+        font-size: 18px;
     }
 
     h2 {
@@ -521,9 +494,16 @@ footer i {
 }
 
 @media only screen and (min-width:440px) and (max-width:960px) {
+    .rufinaBikini {
+        margin-right: 0px;
+    }
 
-    .nav-menu {
-        padding-left: 170px;
+    .nav-link {
+        font-size: 16px;
+        ;
+    }
+    .carousel-item img{
+        height: 250px;
     }
 
     .youtube {
@@ -538,9 +518,11 @@ footer i {
 }
 
 @media only screen and (min-width:520px) and (max-width:960px) {
-
-    .nav-menu {
-        padding-left: 190px;
+    .rufinaBikini {
+        margin-right: 0px;
+    }
+    .carousel-item img{
+        height: 350px;
     }
 
     .youtube {
@@ -559,9 +541,11 @@ footer i {
 }
 
 @media only screen and (min-width:580px) and (max-width:960px) {
-
-    .nav-menu {
-        padding-left: 230px;
+    .rufinaBikini {
+        margin-right: 0px;
+    }
+    .carousel-item img{
+        height: 390px;
     }
 
     .youtube {
@@ -575,8 +559,17 @@ footer i {
 }
 
 @media only screen and (min-width:650px) and (max-width:960px) {
-    .nav-menu {
-        padding-left: 260px;
+    .rufinaBikini {
+        margin-right: 0px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+        ;
+    }
+
+    h1 {
+        font-size: 20px;
     }
 
     .youtube {
@@ -591,28 +584,8 @@ footer i {
 }
 
 @media only screen and (min-width:720px) and (max-width:960px) {
-    .header {
-        height: 60px;
-    }
-
-    .logo {
-        font-size: 20px;
-        margin-left: 5px;
-    }
-
-    .logo img {
-        height: 50px;
-        width: 50px;
-    }
-
-    .fa-bars {
-        font-size: 35px;
-        color: #fff;
-        padding: 10px 20px 10px 0px;
-    }
-
-    .nav-menu {
-        padding-left: 300px;
+    .rufinaBikini {
+        margin-right: 70px;
     }
 
     .youtube {
@@ -661,7 +634,9 @@ footer i {
     }
 
     /*-------------------finaliza galeria---------------- */
+
     /* ---------------galeria pag sport--------------------- */
+
     .sport {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(3, 350);
@@ -718,8 +693,8 @@ footer i {
 }
 
 @media only screen and (min-width:800px) and (max-width:960px) {
-    .nav-menu {
-        padding-left: 350px;
+    .rufinaBikini {
+        margin-right: 100px;
     }
 
     .youtube {
@@ -736,35 +711,13 @@ footer i {
 
 /* ------------------------------notbook--------------------------------- */
 @media only screen and (min-width:961px) {
-    .header {
-        height: 70px;
+    .rufinaBikini {
+        margin-right: 190px;
     }
 
-    .logo {
-        margin-top: 5px;
-        margin-left: 20px;
-        font-size: 18px;
-    }
-
-    .logo img {
-        border-radius: 50px;
-        margin-right: 10px;
-        height: 60px;
-        width: 60px;
-    }
-
-    .nav-menu-link {
-        font-size: 16px;
-        margin: 0px;
-        line-height: 40px;
-        padding: 8px 20px;
-        border-radius: 3px;
-    }
-
-    .nav-menu {
-        display: flex;
-        margin-right: 10px;
-        list-style: none;
+    .nav-link {
+        font-size: 20px;
+        ;
     }
 
     .nav i {
@@ -781,9 +734,6 @@ footer i {
         height: 250px;
     }
 
-    .h1tienda {
-        font-size: 20px;
-    }
 
     .bikinis {
         grid-template-columns: repeat(3, 1fr);
@@ -797,6 +747,11 @@ footer i {
 }
 
 @media only screen and (min-width:1100px) {
+    .rufinaBikini {
+        text-transform: capitalize;
+        margin-right: 350px;
+    }
+
     .youtube {
         margin-left: 250px;
     }
@@ -815,17 +770,9 @@ footer i {
 
 /* --------------------escritorio------------------------------ */
 @media only screen and (min-width:1300px) {
-    .logo {
-        font-size: 24px;
-        font-weight: bold;
-    }
-
-    .nav-menu-link {
-        font-size: 20px;
-        margin: 0px;
-        line-height: 40px;
-        padding: 8px 30px;
-        border-radius: 3px;
+    .rufinaBikini {
+        text-transform: capitalize;
+        margin-right: 460px;
     }
 
     .youtube iframe {
@@ -835,10 +782,6 @@ footer i {
 
     .youtube {
         margin-left: 250px;
-    }
-
-    .h1tienda {
-        font-size: 24px;
     }
 
     .img img {
