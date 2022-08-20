@@ -6,9 +6,6 @@
 
 body {
     background-color: #fff;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 77px auto 133px;
@@ -50,9 +47,7 @@ body {
     height: 10px;
     border-radius: 100%;
 }
-.carousel-item img{
-    object-fit: cover;
-}
+
 
 /* -----------------finaliza carrousel----------------------- */
 main {
@@ -63,7 +58,6 @@ main {
 .youtube {
     display: flex;
     justify-content: center;
-    margin-right: 250px;
 }
 
 /* ------------------------img pag tienda------------------- */
@@ -396,10 +390,6 @@ footer i {
         ;
     }
 
-    /* CARROUSEL */
-    .carousel-item img {
-        height: 250px;
-    }
 
     /* ENCABEZADOS */
     h1 {
@@ -410,10 +400,6 @@ footer i {
         font-size: 15px;
     }
 
-    .youtube {
-        margin-left: 140px;
-        margin-bottom: 20px;
-    }
 
     .img img {
         width: 330px;
@@ -449,9 +435,7 @@ footer i {
     .nav-link {
         font-size: 16px;
     }
-    .carousel-item img{
-        height: 250px;
-    }
+    
 
     h1 {
         font-size: 18px;
@@ -461,10 +445,6 @@ footer i {
         font-size: 20px;
     }
 
-    .youtube {
-        margin-left: 170px;
-        margin-bottom: 20px;
-    }
 
     .img img {
         width: 330px;
@@ -502,13 +482,7 @@ footer i {
         font-size: 16px;
         ;
     }
-    .carousel-item img{
-        height: 250px;
-    }
-
-    .youtube {
-        margin-left: 200px;
-    }
+    
 
     .img img {
         width: 400px;
@@ -521,13 +495,7 @@ footer i {
     .rufinaBikini {
         margin-right: 0px;
     }
-    .carousel-item img{
-        height: 350px;
-    }
-
-    .youtube {
-        margin-left: 240px;
-    }
+    
 
     .bikinis {
         grid-template-columns: 1fr 1fr;
@@ -544,13 +512,7 @@ footer i {
     .rufinaBikini {
         margin-right: 0px;
     }
-    .carousel-item img{
-        height: 390px;
-    }
-
-    .youtube {
-        margin-left: 250px;
-    }
+    
 
     .img img {
         width: 450px;
@@ -572,9 +534,6 @@ footer i {
         font-size: 20px;
     }
 
-    .youtube {
-        margin-left: 250px;
-    }
 
     .youtube iframe {
         width: 350px;
@@ -588,9 +547,6 @@ footer i {
         margin-right: 70px;
     }
 
-    .youtube {
-        margin-left: 260px;
-    }
 
     .img img {
         width: 500px;
@@ -697,9 +653,6 @@ footer i {
         margin-right: 100px;
     }
 
-    .youtube {
-        margin-left: 230px;
-    }
 }
 
 @media only screen and (min-width:900px) and (max-width: 960px) {
@@ -724,10 +677,6 @@ footer i {
         color: #F089A0;
     }
 
-    .youtube {
-        margin-left: 250px;
-        margin-bottom: 20px;
-    }
 
     .youtube iframe {
         width: 500px;
@@ -752,9 +701,6 @@ footer i {
         margin-right: 350px;
     }
 
-    .youtube {
-        margin-left: 250px;
-    }
 
     .item {
         box-shadow: 1px 1px 5px #333;
@@ -778,10 +724,6 @@ footer i {
     .youtube iframe {
         width: 600px;
         height: 350px;
-    }
-
-    .youtube {
-        margin-left: 250px;
     }
 
     .img img {
