@@ -32,7 +32,7 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #d7d37c8e;
+    background-color: #fcf69c99;
     transition: all 1, 95s;
     border-radius: 10px;
 }
