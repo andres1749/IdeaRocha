@@ -94,7 +94,6 @@ h1 {
 
     text: {
         align: center;
-        transform: capitalize;
         decoration: underline;
     }
 
@@ -109,7 +108,6 @@ h2 {
 
     text: {
         align: center;
-        transform: capitalize;
         decoration: underline;
     }
 
@@ -225,7 +223,7 @@ h2 {
 
     .correr {
         background: {
-            image: url(/fotos/2\ mujeres\ corriendo.jpg);
+            image: url(../fotos/2\ mujeres\ corriendo.jpg);
             size: cover;
             position: center;
         }
@@ -269,32 +267,32 @@ h2 {
     }
 
     .item1 {
-        background-image: url(/fotos/bikini\ agua.jpg);
+        background-image: url(../fotos/bikini\ agua.jpg);
         @include centrarfotos();
     }
 
     .item2 {
-        background-image: url(/fotos/bikini\ arena.jpg);
+        background-image: url(../fotos/bikini\ arena.jpg);
         @include centrarfotos();
     }
 
     .item3 {
-        background-image: url(/fotos/bikini\ rocas.jpg);
+        background-image: url(../fotos/bikini\ rocas.jpg);
         @include centrarfotos();
     }
 
     .item4 {
-        background-image: url(/fotos/mujer\ estirando.jpg);
+        background-image: url(../fotos/mujer\ estirando.jpg);
         @include centrarfotos();
     }
 
     .item5 {
-        background-image: url(/fotos/salto.jpg);
+        background-image: url(../fotos/salto.jpg);
         @include centrarfotos();
     }
 
     .item6 {
-        background-image: url(/fotos/yoga.jpg);
+        background-image: url(../fotos/yoga.jpg);
         @include centrarfotos();
     }
 }
@@ -315,42 +313,42 @@ h2 {
 
 
     .calzas1 {
-        background-image: url(/fotos/prensa\ piernas.jpg);
+        background-image: url(../fotos/prensa\ piernas.jpg);
         @include centrarfotos();
     }
 
     .calzas2 {
-        background-image: url(/fotos/2\ mujeres\ ejercicio.jpg);
+        background-image: url(../fotos/2\ mujeres\ ejercicio.jpg);
         @include centrarfotos();
     }
 
     .calzas3 {
-        background-image: url(/fotos/abdominal\ pesa.jpg);
+        background-image: url(../fotos/abdominal\ pesa.jpg);
         @include centrarfotos();
     }
 
     .calzas4 {
-        background-image: url(/fotos/abdominales.jpg);
+        background-image: url(../fotos/abdominales.jpg);
         @include centrarfotos();
     }
 
     .calzas5 {
-        background-image: url(/fotos/mujer\ mancuerna.jpg);
+        background-image: url(../fotos/mujer\ mancuerna.jpg);
         @include centrarfotos();
     }
 
     .calzas6 {
-        background-image: url(/fotos/espalda.jpg);
+        background-image: url(../fotos/espalda.jpg);
         @include centrarfotos();
     }
 
     .calzas7 {
-        background-image: url(/fotos/escalando\ roca.jpg);
+        background-image: url(../fotos/escalando\ roca.jpg);
         @include centrarfotos();
     }
 
     .calzas8 {
-        background-image: url(/fotos/estirar\ casacada\ agua.jpg);
+        background-image: url(../fotos/estirar\ casacada\ agua.jpg);
         @include centrarfotos();
     }
 }

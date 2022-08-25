@@ -71,7 +71,6 @@ h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #F089A0;
   text-align: center;
-  text-transform: capitalize;
   text-decoration: underline;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -80,7 +79,6 @@ h1 {
 h2 {
   color: #F089A0;
   text-align: center;
-  text-transform: capitalize;
   text-decoration: underline;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -169,7 +167,7 @@ h2 {
   height: 50vh;
 }
 .sectionmap .correr {
-  background-image: url(/fotos/2\ mujeres\ corriendo.jpg);
+  background-image: url(../fotos/2\ mujeres\ corriendo.jpg);
   background-size: cover;
   background-position: center;
   width: 40%;
@@ -198,32 +196,32 @@ h2 {
   width: 100%;
 }
 .bikinis .item1 {
-  background-image: url(/fotos/bikini\ agua.jpg);
+  background-image: url(../fotos/bikini\ agua.jpg);
   background-size: cover;
   background-position: center;
 }
 .bikinis .item2 {
-  background-image: url(/fotos/bikini\ arena.jpg);
+  background-image: url(../fotos/bikini\ arena.jpg);
   background-size: cover;
   background-position: center;
 }
 .bikinis .item3 {
-  background-image: url(/fotos/bikini\ rocas.jpg);
+  background-image: url(../fotos/bikini\ rocas.jpg);
   background-size: cover;
   background-position: center;
 }
 .bikinis .item4 {
-  background-image: url(/fotos/mujer\ estirando.jpg);
+  background-image: url(../fotos/mujer\ estirando.jpg);
   background-size: cover;
   background-position: center;
 }
 .bikinis .item5 {
-  background-image: url(/fotos/salto.jpg);
+  background-image: url(../fotos/salto.jpg);
   background-size: cover;
   background-position: center;
 }
 .bikinis .item6 {
-  background-image: url(/fotos/yoga.jpg);
+  background-image: url(../fotos/yoga.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -238,42 +236,42 @@ h2 {
   padding: 10px;
 }
 .sport .calzas1 {
-  background-image: url(/fotos/prensa\ piernas.jpg);
+  background-image: url(../fotos/prensa\ piernas.jpg);
   background-size: cover;
   background-position: center;
 }
 .sport .calzas2 {
-  background-image: url(/fotos/2\ mujeres\ ejercicio.jpg);
+  background-image: url(../fotos/2\ mujeres\ ejercicio.jpg);
   background-size: cover;
   background-position: center;
 }
 .sport .calzas3 {
-  background-image: url(/fotos/abdominal\ pesa.jpg);
+  background-image: url(../fotos/abdominal\ pesa.jpg);
   background-size: cover;
   background-position: center;
 }
 .sport .calzas4 {
-  background-image: url(/fotos/abdominales.jpg);
+  background-image: url(../fotos/abdominales.jpg);
   background-size: cover;
   background-position: center;
 }
 .sport .calzas5 {
-  background-image: url(/fotos/mujer\ mancuerna.jpg);
+  background-image: url(../fotos/mujer\ mancuerna.jpg);
   background-size: cover;
   background-position: center;
 }
 .sport .calzas6 {
-  background-image: url(/fotos/espalda.jpg);
+  background-image: url(../fotos/espalda.jpg);
   background-size: cover;
   background-position: center;
 }
 .sport .calzas7 {
-  background-image: url(/fotos/escalando\ roca.jpg);
+  background-image: url(../fotos/escalando\ roca.jpg);
   background-size: cover;
   background-position: center;
 }
 .sport .calzas8 {
-  background-image: url(/fotos/estirar\ casacada\ agua.jpg);
+  background-image: url(../fotos/estirar\ casacada\ agua.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -484,4 +482,6 @@ footer .fa-whatsapp:hover {
     transition: all 0.9s;
     filter: grayscale(0%);
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
