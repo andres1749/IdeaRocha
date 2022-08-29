@@ -454,7 +454,7 @@ footer .fa-whatsapp:hover {
     grid-row: 4/5;
   }
 }
-/* ------------------------------notbook--------------------------------- */
+/* ------------------------------notbook de 961px--------------------------------- */
 @media only screen and (min-width: 961px) {
   .nav-link {
     font-size: 20px;
