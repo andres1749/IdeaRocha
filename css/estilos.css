@@ -57,12 +57,12 @@ main {
 }
 
 /* ------------------------img pag tienda------------------- */
-.img {
+.imagen--yoga {
   display: flex;
   justify-content: center;
   margin: 30px 0px 20px;
 }
-.img img {
+.imagen--yoga img {
   border-radius: 15px;
 }
 
