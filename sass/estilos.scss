@@ -2,30 +2,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto+Mono&display=swap');
 
-/* mapa para la pag tienda - se va aplicar cuando edite la pagina */
+// mapa para la pag tienda - aplica a los btn
 $tiendacards: (
-    red: 10px,
-    blue: 11px,
-    green: 12px,
-    yellow: 13px,
-    coral: 10px,
-    aqua: 11px,
-    violet: 12px,
-    pink: 13px,
+    10px: red,
+    11px: orange,
+    12px: yellow,
+    13px: aqua,
+    14px: rgb(106, 106, 219),
+    15px: rgb(9, 194, 9),
+    16px: pink,
+    17px: coral,
+    18px: violet
 );
 
-/* variables */
+//variables
 $colorprincipal: #F089A0;
 
 
-/* mixin */
+//mixin
 @mixin centrarfotos {
     background-size: cover;
     background-position: center;
 }
 
 
-
+/* reset - body   */
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +39,7 @@ body {
     grid-template-rows: 77px auto 133px;
     min-height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 /* ----------encabezado.---navegacion------- */
@@ -99,16 +101,45 @@ main {
     justify-content: center;
 }
 
-/* ------------------------img pag tienda------------------- */
-.imagen--yoga {
-    display: flex;
-    justify-content: center;
-    margin: 30px 0px 20px;
+/* ------------------------pag tienda------------------- */
 
-    img {
-        border-radius: 15px;
+.jumbotron {
+    background-color: black;
+}
+
+.parrafo--tienda {
+    color: #fff;
+    padding-top: 10px;
+
+}
+
+.card-deck {
+    margin-bottom: 15px;
+
+    .card {
+        border-color: #2A2929;
     }
 }
+
+@each $font,
+$colorcitos in $tiendacards {
+    .btn--#{$font} {
+        background-color: #333;
+        border: 2px solid $colorcitos;
+        color: $colorcitos;
+        font-family: 'Roboto Mono', monospace;
+        border-radius: $font;
+    }
+}
+
+.btn {
+    &:hover {
+        color: #fff;
+        transition: all 1, 8s;
+        font-weight: 500;
+    }
+}
+
 
 /* ------------encabezados h1--------------- */
 h1 {
@@ -141,9 +172,6 @@ h3 {
     font-size: 20px;
     margin-bottom: 10px;
 }
-
-
-
 
 /*------------------------formulario page nosotros----------------------- */
 .formulario {
@@ -221,13 +249,16 @@ h3 {
     border-radius: 5px;
     padding: 3px;
 }
+
 #lastname {
     @extend #emailAddress;
 
 }
+
 #name {
     @extend #emailAddress;
 }
+
 #message {
     @extend #emailAddress;
     margin-top: 10px;
@@ -407,7 +438,7 @@ footer {
         &:hover {
             transition: all 1s;
             transform: scale(1.1);
-            color: #1F28FA;
+            color: #3a4cf1;
         }
     }
 
@@ -453,14 +484,6 @@ footer {
         font-size: 15px;
     }
 
-
-    .imagen--yoga {
-        img {
-            width: 280px;
-            border-radius: 10px;
-        }
-    }
-
     .youtube {
 
         iframe {
@@ -496,15 +519,6 @@ footer {
     }
 
 
-    .imagen--yoga {
-
-        img {
-            width: 300px;
-            border-radius: 10px;
-        }
-    }
-
-
     footer {
         font-size: 15px;
 
@@ -522,22 +536,9 @@ footer {
         height: 25vh;
     }
 
-    /* ----------------------------tablet--------------------------------- */
 }
 
-@media only screen and (min-width:440px) and (max-width:960px) {
-    h2 {
-        font-size: 20px;
-    }
-
-    .imagen--yoga {
-
-        img {
-            width: 350px;
-        }
-
-    }
-}
+/* ----------------------------tablet--------------------------------- */
 
 // media de 520px a 960 px
 @media only screen and (min-width:520px) and (max-width:960px) {
