@@ -1,9 +1,30 @@
+/*fuente para barra de navegacion-H1-H2-H3 */
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto+Mono&display=swap');
+
+/* mapa para la pag tienda - se va aplicar cuando edite la pagina */
+$tiendacards: (
+    red: 10px,
+    blue: 11px,
+    green: 12px,
+    yellow: 13px,
+    coral: 10px,
+    aqua: 11px,
+    violet: 12px,
+    pink: 13px,
+);
+
+/* variables */
 $colorprincipal: #F089A0;
 
+
+/* mixin */
 @mixin centrarfotos {
     background-size: cover;
     background-position: center;
 }
+
+
 
 * {
     margin: 0;
@@ -42,9 +63,11 @@ body {
         .nav-link {
             color: #fff;
             text-transform: capitalize;
+            font-family: 'Roboto Mono', monospace;
+
 
             &:hover {
-                background-color: #fcf69c99;
+                background-color: #fcf69c72;
                 transition: all 1, 95s;
                 border-radius: 10px;
             }
@@ -89,7 +112,8 @@ main {
 
 /* ------------encabezados h1--------------- */
 h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    ;
     color: $colorprincipal;
 
     text: {
@@ -104,12 +128,7 @@ h1 {
 }
 
 h2 {
-    color: $colorprincipal;
-
-    text: {
-        align: center;
-        decoration: underline;
-    }
+    @extend h1;
 
     margin: {
         top: 20px;
@@ -117,11 +136,13 @@ h2 {
     }
 }
 
-.h2class {
-    text-align: center;
-    font-size: 18px;
+h3 {
+    @extend h1;
+    font-size: 20px;
     margin-bottom: 10px;
 }
+
+
 
 
 /*------------------------formulario page nosotros----------------------- */
@@ -192,8 +213,7 @@ h2 {
     }
 }
 
-#name,
-#lastname,
+
 #emailAddress {
     border: #edb026 1px solid;
     color: white;
@@ -201,13 +221,16 @@ h2 {
     border-radius: 5px;
     padding: 3px;
 }
+#lastname {
+    @extend #emailAddress;
 
+}
+#name {
+    @extend #emailAddress;
+}
 #message {
+    @extend #emailAddress;
     margin-top: 10px;
-    border: #edb026 1px solid;
-    color: white;
-    background-color: #2A2929;
-    border-radius: 5px;
     padding: 5px;
 }
 
@@ -431,7 +454,7 @@ footer {
     }
 
 
-    .img {
+    .imagen--yoga {
         img {
             width: 280px;
             border-radius: 10px;
@@ -473,7 +496,7 @@ footer {
     }
 
 
-    .img {
+    .imagen--yoga {
 
         img {
             width: 300px;
@@ -507,11 +530,15 @@ footer {
         font-size: 20px;
     }
 
-    .img img {
-        width: 350px;
+    .imagen--yoga {
+
+        img {
+            width: 350px;
+        }
 
     }
 }
+
 // media de 520px a 960 px
 @media only screen and (min-width:520px) and (max-width:960px) {
     .bikinis {
