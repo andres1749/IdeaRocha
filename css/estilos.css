@@ -1,8 +1,6 @@
 /*fuente para barra de navegacion-H1-H2-H3 */
 @import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Roboto+Mono&display=swap");
-/* mapa para la pag tienda - se va aplicar cuando edite la pagina */
-/* variables */
-/* mixin */
+/* reset - body   */
 * {
   margin: 0;
   padding: 0;
@@ -39,7 +37,7 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 .header .bgnav .nav-link:hover {
-  background-color: rgba(252, 246, 156, 0.4470588235);
+  background-color: rgba(21, 21, 19, 0.7254901961);
   transition: all 1, 95s;
   border-radius: 10px;
 }
@@ -62,14 +60,99 @@ main {
   justify-content: center;
 }
 
-/* ------------------------img pag tienda------------------- */
-.imagen--yoga {
-  display: flex;
-  justify-content: center;
-  margin: 30px 0px 20px;
+/* ------------------------pag tienda------------------- */
+.jumbotron {
+  background-color: black;
 }
-.imagen--yoga img {
+
+.parrafo--tienda {
+  color: #fff;
+  padding-top: 10px;
+}
+
+.card-deck {
+  margin-bottom: 15px;
+}
+.card-deck .card {
+  border-color: #2A2929;
+}
+
+.btn--10px {
+  background-color: #333;
+  border: 2px solid red;
+  color: red;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 10px;
+}
+
+.btn--11px {
+  background-color: #333;
+  border: 2px solid orange;
+  color: orange;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 11px;
+}
+
+.btn--12px {
+  background-color: #333;
+  border: 2px solid yellow;
+  color: yellow;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 12px;
+}
+
+.btn--13px {
+  background-color: #333;
+  border: 2px solid aqua;
+  color: aqua;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 13px;
+}
+
+.btn--14px {
+  background-color: #333;
+  border: 2px solid rgb(106, 106, 219);
+  color: rgb(106, 106, 219);
+  font-family: "Roboto Mono", monospace;
+  border-radius: 14px;
+}
+
+.btn--15px {
+  background-color: #333;
+  border: 2px solid rgb(9, 194, 9);
+  color: rgb(9, 194, 9);
+  font-family: "Roboto Mono", monospace;
   border-radius: 15px;
+}
+
+.btn--16px {
+  background-color: #333;
+  border: 2px solid pink;
+  color: pink;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 16px;
+}
+
+.btn--17px {
+  background-color: #333;
+  border: 2px solid coral;
+  color: coral;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 17px;
+}
+
+.btn--18px {
+  background-color: #333;
+  border: 2px solid violet;
+  color: violet;
+  font-family: "Roboto Mono", monospace;
+  border-radius: 18px;
+}
+
+.btn:hover {
+  color: #fff;
+  transition: all 1, 8s;
+  font-weight: 500;
 }
 
 /* ------------encabezados h1--------------- */
@@ -301,7 +384,7 @@ footer .fa-facebook {
 footer .fa-facebook:hover {
   transition: all 1s;
   transform: scale(1.1);
-  color: #1F28FA;
+  color: #3a4cf1;
 }
 footer .fa-instagram {
   color: #fff;
@@ -334,10 +417,6 @@ footer .fa-whatsapp:hover {
   h2 {
     font-size: 15px;
   }
-  .imagen--yoga img {
-    width: 280px;
-    border-radius: 10px;
-  }
   .youtube iframe {
     width: 250px;
     height: 150px;
@@ -361,10 +440,6 @@ footer .fa-whatsapp:hover {
   h2 {
     font-size: 18px;
   }
-  .imagen--yoga img {
-    width: 300px;
-    border-radius: 10px;
-  }
   footer {
     font-size: 15px;
   }
@@ -377,16 +452,8 @@ footer .fa-whatsapp:hover {
   .sectionmap {
     height: 25vh;
   }
-  /* ----------------------------tablet--------------------------------- */
 }
-@media only screen and (min-width: 440px) and (max-width: 960px) {
-  h2 {
-    font-size: 20px;
-  }
-  .imagen--yoga img {
-    width: 350px;
-  }
-}
+/* ----------------------------tablet--------------------------------- */
 @media only screen and (min-width: 520px) and (max-width: 960px) {
   .bikinis {
     grid-template-columns: 1fr 1fr;
