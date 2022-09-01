@@ -37,7 +37,7 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 .header .bgnav .nav-link:hover {
-  background-color: rgba(252, 246, 156, 0.4470588235);
+  background-color: rgba(21, 21, 19, 0.7254901961);
   transition: all 1, 95s;
   border-radius: 10px;
 }
