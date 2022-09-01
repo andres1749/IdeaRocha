@@ -221,13 +221,16 @@ h3 {
     border-radius: 5px;
     padding: 3px;
 }
+
 #lastname {
     @extend #emailAddress;
 
 }
+
 #name {
     @extend #emailAddress;
 }
+
 #message {
     @extend #emailAddress;
     margin-top: 10px;
