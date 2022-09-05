@@ -201,7 +201,7 @@ h3 {
   bottom: 0;
 }
 
-.ellas {
+.contenedor--imagen {
   z-index: 2;
 }
 
@@ -381,7 +381,6 @@ footer {
 footer p {
   margin-bottom: 30px;
   text-decoration: underline;
-  box-shadow: 0 3px 5px;
   display: inline-block;
   border-radius: 3px;
 }
@@ -436,6 +435,7 @@ footer .fa-whatsapp:hover {
     width: 250px;
     height: 150px;
   }
+  /* pagina nosotros */
   .quienes--somos {
     min-width: 280px;
     height: 300px;
@@ -443,6 +443,7 @@ footer .fa-whatsapp:hover {
   .nosotros {
     min-width: 280px;
   }
+  /* footer */
   footer {
     font-size: 15px;
   }
@@ -451,6 +452,7 @@ footer .fa-whatsapp:hover {
     letter-spacing: 20px;
     margin-left: 10px;
   }
+  /* mapa page contacto */
   .sectionmap {
     height: 25vh;
   }
@@ -462,9 +464,15 @@ footer .fa-whatsapp:hover {
   h2 {
     font-size: 18px;
   }
-  .nosotros {
-    min-width: 300px;
+  /* pagina nosotros */
+  .quienes--somos {
+    max-width: 300px;
   }
+  .nosotros {
+    max-width: 300px;
+    margin-top: 10px;
+  }
+  /* footer */
   footer {
     font-size: 15px;
   }
@@ -474,23 +482,27 @@ footer .fa-whatsapp:hover {
   footer i {
     font-size: 20px;
   }
+  /* mapa page contacto */
   .sectionmap {
     height: 25vh;
   }
 }
 /* ----------------------------tablet--------------------------------- */
 @media only screen and (min-width: 520px) and (max-width: 960px) {
+  /* page bikinis */
   .bikinis {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 200px);
   }
+  /* page sport */
   .sport {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 200px);
   }
 }
+/* page nosotros */
 .nosotros {
-  min-width: 350px;
+  min-width: 300px;
 }
 
 @media only screen and (min-width: 650px) and (max-width: 960px) {
@@ -548,22 +560,31 @@ footer .fa-whatsapp:hover {
 }
 /* ------------------------------notbook de 961px--------------------------------- */
 @media only screen and (min-width: 961px) {
+  /* barra de navegacion */
   .nav-link {
     font-size: 20px;
   }
+  /* page inicio  */
   .youtube iframe {
     width: 500px;
     height: 250px;
   }
+  /* page bikinis */
   .bikinis {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px 250px;
   }
+  /* page sport */
   .sport {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 230px 230px;
   }
 }
+/*  page nosotros */
+.nosotros {
+  margin-top: 10px;
+}
+
 @media only screen and (min-width: 1100px) {
   .item {
     box-shadow: 1px 1px 5px #333;

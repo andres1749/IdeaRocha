@@ -175,7 +175,6 @@ h3 {
 
 /*------------------------formulario page nosotros----------------------- */
 .nosotros--principal {
-    
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -198,7 +197,7 @@ h3 {
     right: 0;
     bottom: 0;
 }
-.ellas{
+.contenedor--imagen{
     z-index: 2;
 }
 .quienes--somos {
@@ -413,7 +412,6 @@ footer {
     p {
         margin-bottom: 30px;
         text-decoration: underline;
-        box-shadow: 0 3px 5px;
         display: inline-block;
         border-radius: 3px;
     }
@@ -487,17 +485,19 @@ footer {
         }
     }
 
-    // pagina nosotros
+    /* pagina nosotros */ 
+
     .quienes--somos {
         min-width: 280px;
         height: 300px;
+        
         
     }
     .nosotros{
         min-width: 280px;
         
     }
-
+    /* footer */ 
     footer {
         font-size: 15px;
 
@@ -507,7 +507,7 @@ footer {
             margin-left: 10px;
         }
     }
-
+    /* mapa page contacto */ 
     .sectionmap {
         height: 25vh;
     }
@@ -522,11 +522,16 @@ footer {
     h2 {
         font-size: 18px;
     }
+     /* pagina nosotros */ 
+    .quienes--somos{
+        max-width: 300px;
+    }
     .nosotros{
-        min-width: 300px;
+        max-width: 300px;
+        margin-top: 10px ;
         
     }
-
+     /* footer */ 
     footer {
         font-size: 15px;
 
@@ -539,7 +544,7 @@ footer {
             font-size: 20px;
         }
     }
-
+    /* mapa page contacto */ 
     .sectionmap {
         height: 25vh;
     }
@@ -550,13 +555,14 @@ footer {
 
 // media de 520px a 960 px
 @media only screen and (min-width:520px) and (max-width:960px) {
+    /* page bikinis */ 
     .bikinis {
         grid: {
             template-columns: 1fr 1fr;
             template-rows: repeat(3, 200px);
         }
     }
-
+    /* page sport */ 
     .sport {
         grid: {
             template-columns: 1fr 1fr;
@@ -564,9 +570,9 @@ footer {
         }
     }
 }
+/* page nosotros */ 
 .nosotros{
-    min-width: 350px;
-    
+    min-width: 300px;
 }
 
 
@@ -670,10 +676,11 @@ footer {
 
 /* ------------------------------notbook de 961px--------------------------------- */
 @media only screen and (min-width:961px) {
+    /* barra de navegacion */ 
     .nav-link {
         font-size: 20px;
     }
-
+    /* page inicio  */ 
     .youtube {
 
         iframe {
@@ -682,7 +689,7 @@ footer {
         }
     }
 
-
+/* page bikinis */ 
     .bikinis {
         grid: {
 
@@ -690,7 +697,7 @@ footer {
             template-rows: 250px 250px;
         }
     }
-
+/* page sport */ 
     .sport {
         grid: {
 
@@ -698,6 +705,10 @@ footer {
             template-rows: 230px 230px;
         }
     }
+}
+/*  page nosotros */ 
+.nosotros{
+    margin-top: 10px;
 }
 
 @media only screen and (min-width:1100px) {
