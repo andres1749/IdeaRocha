@@ -208,14 +208,12 @@ h3 {
 .quienes--somos {
   width: 100%;
   height: calc(100vh - 239.99px);
-  flex-shrink: 0;
   border-radius: 10px;
 }
 
 .nosotros {
   width: 50%;
   text-align: center;
-  flex-shrink: 0;
   color: #2A2929;
   z-index: 2;
 }
