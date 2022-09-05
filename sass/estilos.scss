@@ -183,7 +183,8 @@ h3 {
     background-color: rgb(130, 171, 248);
     position: relative;
 }
-.nosotros--principal::after{
+
+.nosotros--principal::after {
     background-image: url(../fotos/mujer\ mancuerna.jpg);
     background-position: left;
     background-repeat: no-repeat;
@@ -197,29 +198,34 @@ h3 {
     right: 0;
     bottom: 0;
 }
-.contenedor--imagen{
+
+.contenedor--imagen {
     z-index: 2;
 }
+
 .quienes--somos {
     width: 100%;
     height: calc(100vh - 239.99px);
     flex-shrink: 0;
     border-radius: 10px;
-    
+
 }
-.nosotros{
+
+.nosotros {
     width: 50%;
     text-align: center;
     flex-shrink: 0;
-    color:#2A2929;
-    z-index: 100;
+    color: #2A2929;
+    z-index: 2;
 }
-.jumbo{
+
+.jumbo {
     background-color: rgba(0, 0, 0, 0.639);
     border-radius: 7px;
     padding: 5px;
-    p{
-        color:  white;
+
+    p {
+        color: white;
     }
 }
 
@@ -485,19 +491,19 @@ footer {
         }
     }
 
-    /* pagina nosotros */ 
+    /* pagina nosotros */
 
     .quienes--somos {
-        min-width: 280px;
-        height: 300px;
-        
-        
+        height: 320px;
+
     }
-    .nosotros{
+
+    .nosotros {
         min-width: 280px;
-        
+
     }
-    /* footer */ 
+
+    /* footer */
     footer {
         font-size: 15px;
 
@@ -507,13 +513,14 @@ footer {
             margin-left: 10px;
         }
     }
-    /* mapa page contacto */ 
+
+    /* mapa page contacto */
     .sectionmap {
         height: 25vh;
     }
 }
 
-@media only screen and (min-width:380px) and (max-width:960px) {
+@media only screen and (min-width:380px) and (max-width:519px) {
 
     h1 {
         font-size: 20px;
@@ -522,16 +529,18 @@ footer {
     h2 {
         font-size: 18px;
     }
-     /* pagina nosotros */ 
-    .quienes--somos{
-        max-width: 300px;
+
+    .quienes--somos {
+        height: 320px;
     }
-    .nosotros{
-        max-width: 300px;
-        margin-top: 10px ;
-        
+
+    .nosotros {
+        margin-top: 10px;
+        min-width: 360px;
+
     }
-     /* footer */ 
+
+    /* footer */
     footer {
         font-size: 15px;
 
@@ -544,25 +553,26 @@ footer {
             font-size: 20px;
         }
     }
-    /* mapa page contacto */ 
+
+    /* mapa page contacto */
     .sectionmap {
         height: 25vh;
     }
 
 }
 
-/* ----------------------------tablet--------------------------------- */
+/* ----------------------------media de 520px a 649 px--------------------------------- */
+@media only screen and (min-width:520px) and (max-width:649px) {
 
-// media de 520px a 960 px
-@media only screen and (min-width:520px) and (max-width:960px) {
-    /* page bikinis */ 
+    /* page bikinis */
     .bikinis {
         grid: {
             template-columns: 1fr 1fr;
             template-rows: repeat(3, 200px);
         }
     }
-    /* page sport */ 
+
+    /* page sport */
     .sport {
         grid: {
             template-columns: 1fr 1fr;
@@ -570,11 +580,6 @@ footer {
         }
     }
 }
-/* page nosotros */ 
-.nosotros{
-    min-width: 300px;
-}
-
 
 @media only screen and (min-width:650px) and (max-width:960px) {
 
@@ -605,7 +610,7 @@ footer {
         }
     }
 
-    
+
 
     /*-------------------finaliza galeria---------------- */
 
@@ -676,11 +681,13 @@ footer {
 
 /* ------------------------------notbook de 961px--------------------------------- */
 @media only screen and (min-width:961px) {
-    /* barra de navegacion */ 
+
+    /* barra de navegacion */
     .nav-link {
         font-size: 20px;
     }
-    /* page inicio  */ 
+
+    /* page inicio  */
     .youtube {
 
         iframe {
@@ -689,7 +696,7 @@ footer {
         }
     }
 
-/* page bikinis */ 
+    /* page bikinis */
     .bikinis {
         grid: {
 
@@ -697,7 +704,8 @@ footer {
             template-rows: 250px 250px;
         }
     }
-/* page sport */ 
+
+    /* page sport */
     .sport {
         grid: {
 
@@ -706,8 +714,9 @@ footer {
         }
     }
 }
-/*  page nosotros */ 
-.nosotros{
+
+/*  page nosotros */
+.nosotros {
     margin-top: 10px;
 }
 
