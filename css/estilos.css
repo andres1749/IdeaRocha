@@ -176,42 +176,55 @@ h3 {
 }
 
 /*------------------------formulario page nosotros----------------------- */
-.formulario {
-  display: grid;
-  width: 250px;
-  margin: 20px auto;
-  border: 1px solid;
-  border-radius: 5px;
-  background-color: rgba(252, 246, 156, 0.6);
+.nosotros--principal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0 5px black;
+  background-color: rgb(130, 171, 248);
+  position: relative;
 }
-.formulario label {
+
+.nosotros--principal::after {
+  background-image: url(../fotos/mujer\ mancuerna.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  opacity: 0.4;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.contenedor--imagen {
+  z-index: 2;
+}
+
+.quienes--somos {
+  width: 100%;
+  height: calc(100vh - 239.99px);
+  border-radius: 10px;
+}
+
+.nosotros {
+  width: 50%;
   text-align: center;
-  text-transform: capitalize;
-  font-size: 15px;
+  color: #2A2929;
+  z-index: 2;
 }
 
-.name {
-  margin: 2px 3px;
-  border-color: rgba(203, 85, 43, 0.734);
-  border-radius: 3px;
+.jumbo {
+  background-color: rgba(0, 0, 0, 0.639);
+  border-radius: 7px;
+  padding: 5px;
 }
-
-.texto1 {
-  margin: 4px 3px 7px;
-  border-color: rgba(205, 63, 7, 0.939);
-  border-radius: 5px;
-}
-
-.enviar1 {
-  margin-left: 97px;
-  margin-bottom: 5px;
-  width: 60px;
-  border-radius: 3px;
-  background-color: #fff;
-}
-.enviar1:hover {
-  background-color: #ea94a6;
-  transition: 1, 8;
+.jumbo p {
+  color: white;
 }
 
 /* -----------------------------formulario contacto-------------------------------- */
@@ -366,7 +379,6 @@ footer {
 footer p {
   margin-bottom: 30px;
   text-decoration: underline;
-  box-shadow: 0 3px 5px;
   display: inline-block;
   border-radius: 3px;
 }
@@ -421,6 +433,14 @@ footer .fa-whatsapp:hover {
     width: 250px;
     height: 150px;
   }
+  /* pagina nosotros */
+  .quienes--somos {
+    height: 320px;
+  }
+  .nosotros {
+    min-width: 280px;
+  }
+  /* footer */
   footer {
     font-size: 15px;
   }
@@ -429,17 +449,26 @@ footer .fa-whatsapp:hover {
     letter-spacing: 20px;
     margin-left: 10px;
   }
+  /* mapa page contacto */
   .sectionmap {
     height: 25vh;
   }
 }
-@media only screen and (min-width: 380px) and (max-width: 960px) {
+@media only screen and (min-width: 380px) and (max-width: 519px) {
   h1, h2, h3 {
     font-size: 20px;
   }
   h2 {
     font-size: 18px;
   }
+  .quienes--somos {
+    height: 320px;
+  }
+  .nosotros {
+    margin-top: 10px;
+    min-width: 360px;
+  }
+  /* footer */
   footer {
     font-size: 15px;
   }
@@ -449,16 +478,19 @@ footer .fa-whatsapp:hover {
   footer i {
     font-size: 20px;
   }
+  /* mapa page contacto */
   .sectionmap {
     height: 25vh;
   }
 }
-/* ----------------------------tablet--------------------------------- */
-@media only screen and (min-width: 520px) and (max-width: 960px) {
+/* ----------------------------media de 520px a 649 px--------------------------------- */
+@media only screen and (min-width: 520px) and (max-width: 649px) {
+  /* page bikinis */
   .bikinis {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 200px);
   }
+  /* page sport */
   .sport {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 200px);
@@ -519,22 +551,31 @@ footer .fa-whatsapp:hover {
 }
 /* ------------------------------notbook de 961px--------------------------------- */
 @media only screen and (min-width: 961px) {
+  /* barra de navegacion */
   .nav-link {
     font-size: 20px;
   }
+  /* page inicio  */
   .youtube iframe {
     width: 500px;
     height: 250px;
   }
+  /* page bikinis */
   .bikinis {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 250px 250px;
   }
+  /* page sport */
   .sport {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 230px 230px;
   }
 }
+/*  page nosotros */
+.nosotros {
+  margin-top: 10px;
+}
+
 @media only screen and (min-width: 1100px) {
   .item {
     box-shadow: 1px 1px 5px #333;

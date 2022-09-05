@@ -1,0 +1,19 @@
+{
+  "name": "idea-rocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andres1749/IdeaRocha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andres1749/IdeaRocha/issues"
+  },
+  "homepage": "https://github.com/andres1749/IdeaRocha#readme"
+}
