@@ -1,0 +1,53 @@
+/*------------------------ page nosotros----------------------- */
+.nosotros--principal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 5px black;
+    background-color: rgb(130, 171, 248);
+    position: relative;
+}
+
+.nosotros--principal::after {
+    background-image: url(../fotos/mujer\ mancuerna.jpg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    opacity: 0.4;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.contenedor--imagen {
+    z-index: 2;
+}
+
+.quienes--somos {
+    width: 100%;
+    height: calc(100vh - 239.99px);
+    border-radius: 10px;
+}
+
+
+.nosotros {
+    width: 50%;
+    text-align: center;
+    color: #2A2929;
+    z-index: 2;
+}
+
+.jumbo {
+    background-color: rgba(0, 0, 0, 0.639);
+    border-radius: 7px;
+    padding: 5px;
+
+    p {
+        color: white;
+    }
+}

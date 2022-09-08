@@ -1,0 +1,51 @@
+/* --------------------pag bikini---------------------- */
+
+.bikinis {
+    width: 100%;
+    height: auto;
+    display: grid;
+
+    grid: {
+
+        template-columns: 1fr;
+        template-rows: repeat(6, 200px);
+        gap: 20px;
+    }
+
+    padding: 20px;
+
+    .item {
+        border: 2px solid #333;
+        width: 100%;
+    }
+
+    .item1 {
+        background-image: url(../fotos/bikini\ agua.jpg);
+        @include centrarfotos();
+    }
+
+    .item2 {
+        background-image: url(../fotos/bikini\ arena.jpg);
+        @include centrarfotos();
+    }
+
+    .item3 {
+        background-image: url(../fotos/bikini\ rocas.jpg);
+        @include centrarfotos();
+    }
+
+    .item4 {
+        background-image: url(../fotos/mujer\ estirando.jpg);
+        @include centrarfotos();
+    }
+
+    .item5 {
+        background-image: url(../fotos/salto.jpg);
+        @include centrarfotos();
+    }
+
+    .item6 {
+        background-image: url(../fotos/yoga.jpg);
+        @include centrarfotos();
+    }
+}

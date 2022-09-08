@@ -1,0 +1,54 @@
+/* -------------------pag sport------------- */
+.sport {
+    width: 100%;
+    display: grid;
+
+    grid: {
+
+        template-columns: 1fr;
+        template-rows: repeat(8, 200px);
+        gap: 15px;
+    }
+
+    padding: 10px;
+
+    .calzas1 {
+        background-image: url(../fotos/prensa\ piernas.jpg);
+        @include centrarfotos();
+    }
+
+    .calzas2 {
+        background-image: url(../fotos/2\ mujeres\ ejercicio.jpg);
+        @include centrarfotos();
+    }
+
+    .calzas3 {
+        background-image: url(../fotos/abdominal\ pesa.jpg);
+        @include centrarfotos();
+    }
+
+    .calzas4 {
+        background-image: url(../fotos/abdominales.jpg);
+        @include centrarfotos();
+    }
+
+    .calzas5 {
+        background-image: url(../fotos/mujer\ mancuerna.jpg);
+        @include centrarfotos();
+    }
+
+    .calzas6 {
+        background-image: url(../fotos/espalda.jpg);
+        @include centrarfotos();
+    }
+
+    .calzas7 {
+        background-image: url(../fotos/escalando\ roca.jpg);
+        @include centrarfotos();
+    }
+
+    .calzas8 {
+        background-image: url(../fotos/estirar\ casacada\ agua.jpg);
+        @include centrarfotos();
+    }
+}

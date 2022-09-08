@@ -1,0 +1,38 @@
+/* ------------------------pag tienda------------------- */
+
+.jumbotron {
+    background-color: black;
+}
+
+.parrafo--tienda {
+    color: #fff;
+    padding-top: 10px;
+
+}
+
+.card-deck {
+    margin-bottom: 15px;
+
+    .card {
+        border-color: #2A2929;
+    }
+}
+
+@each $font,
+$colorcitos in $tiendacards {
+    .btn--#{$font} {
+        background-color: #333;
+        border: 2px solid $colorcitos;
+        color: $colorcitos;
+        font-family: 'Roboto Mono', monospace;
+        border-radius: $font;
+    }
+}
+
+.btn {
+    &:hover {
+        color: #fff;
+        transition: all 1, 8s;
+        font-weight: 500;
+    }
+}
