@@ -167,7 +167,6 @@ footer .fa-whatsapp:hover {
 button {
   position: relative;
   display: inline-block;
-  cursor: pointer;
   outline: none;
   border: 0;
   vertical-align: middle;
@@ -248,6 +247,37 @@ button:hover .button-text {
 .youtube {
   display: flex;
   justify-content: center;
+}
+
+.section3 {
+  margin-top: 20px;
+  background-color: #262626;
+  height: 450px;
+  width: 100%;
+  border-radius: 10px;
+}
+.section3 .envios i {
+  padding-top: 15px;
+  font-size: 150px;
+  color: #F089A0;
+}
+.section3 .h2envios {
+  color: #fff;
+}
+.section3 .parrafoEnvios {
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+}
+.section3 .tarjetas {
+  display: flex;
+  justify-content: center;
+}
+.section3 .tarjetas i {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  padding: 0 10px;
 }
 
 /* ------------------------pag tienda------------------- */
@@ -352,7 +382,7 @@ button:hover .button-text {
   align-items: center;
   justify-content: space-around;
   box-shadow: 0 0 5px black;
-  background-color: rgb(130, 171, 248);
+  background-color: #262626;
   position: relative;
 }
 
