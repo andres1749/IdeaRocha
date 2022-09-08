@@ -1,0 +1,19 @@
+/*---reset---*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*---body---*/ 
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 77px auto 133px;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+/*---main---*/ 
+main {
+    margin: 10px 20px 20px;
+}

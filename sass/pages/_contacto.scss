@@ -1,0 +1,72 @@
+/* -----------------------------formulario contacto-------------------------------- */
+#send {
+    background-color: #ea94a6;
+    font-weight: bold;
+    border-color: #fff;
+    box-shadow: 0 0 5px darkcyan;
+
+    &:hover {
+        background-color: #2A2929;
+        transition: all 1, 5s;
+    }
+}
+
+#emailAddress {
+    border: #26edc2 1px solid;
+    color: rgb(212, 212, 212);
+    background-color: #2A2929;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#lastname {
+    @extend #emailAddress;
+
+}
+
+#name {
+    @extend #emailAddress;
+}
+
+#message {
+    @extend #emailAddress;
+}
+
+/* ---------------finaliza formulario---------- */
+
+/* ------------------mapa contacto----------- */
+
+.sectionmap {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+
+    .correr {
+        background: {
+            image: url(../fotos/2\ mujeres\ corriendo.jpg);
+            size: cover;
+            position: center;
+        }
+
+        width: 40%;
+        margin-top: 20px;
+
+        border: {
+            radius: 5px;
+            style: groove;
+            color: rgba(0, 0, 0, 0.519)
+        }
+    }
+
+    .mapa {
+        margin-top: 20px;
+        width: 40%;
+
+        border: {
+            radius: 5px;
+            style: groove;
+            color: rgba(0, 0, 0, 0.545);
+        }
+
+    }
+}
