@@ -1,3 +1,9 @@
+.contenedor-carousel {
+    background-color: $secundario;
+    width: 100%;
+    border-radius: 5px;
+}
+
 /* -----------------inicia carrousel----------------------- */
 .carousel {
 
@@ -30,7 +36,6 @@
 button {
     position: relative;
     display: inline-block;
-    // cursor: pointer;
     outline: none;
     border: 0;
     vertical-align: middle;
@@ -118,43 +123,61 @@ button {
         }
     }
 }
-/*--finaliza section1--section2--*/ 
 
-/*------------------video youtube pag inicio------------------ */
-.youtube {
-    display: flex;
-    justify-content: center;
-}
-.section3{
+/*--finaliza section1--section2--*/
+
+/*--secion 3 envios--*/
+.section3 {
     margin-top: 20px;
     background-color: $secundario;
     height: 450px;
     width: 100%;
     border-radius: 10px;
-    .envios{
-        i{
-            padding-top: 15px;
-            font-size: 150px ;
-            color: $colorprincipal;
+
+    .envios {
+        background-image: url(/fotos/carretera2.gif);
+        background-position: top;
+        background-size: contain;
+        border-radius: 5px;
+
+        .camionVenta {
+            color: $secundario;
+            font-size: 120px;
         }
     }
-    .h2envios{
-        color: #fff;
-    }
-    .parrafoEnvios{
-        color:#fff;
+
+    .h4Envios {
+        font: {
+            size: 14px;
+            family: 'Poppins', sans-serif;
+        }
+
         text-align: center;
-        font-family: sans-serif;
+        color: $bg;
     }
-    .tarjetas{
+
+    .parrafo-envios {
+        color: $bg;
+        text-align: center;
+    }
+
+    .tarjetas {
         display: flex;
         justify-content: center;
-        i{
-            color: #fff;
-            font-size: 50px;
+
+        i {
+            color: $bg;
+            font-size: 35px;
             text-align: center;
             padding: 0 10px;
         }
     }
-    
+
+    .banco-provincia {
+        font-family: 'Poppins', sans-serif;
+        color: $bg;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 8px;
+    }
 }
