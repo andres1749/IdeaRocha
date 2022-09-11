@@ -1,42 +1,60 @@
 /* -----------------footer--------------------- */
 footer {
-    background-color: $colorprincipal;
-    text-align: center;
-    font-size: 20px;
-    padding: 20px 0 10px;
+    background-color: $secundario;
     width: 100%;
-    box-shadow: 0 0 5px $secundario inset;
-    
 
-    i {
-        font-size: 32px;
-        margin: 0 20px;
-        background-color: $secundario;
-        border-radius: 5px;
-    }
+    /*--secion 3 envios--*/
+    .section3 {
+        height: 450px;
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
 
-    .fa-facebook {
-        color: #3c70a4;
-        &:hover {
-            transition: all 0.7s;
-            transform: scale(1.3);
+        .envios {
+            background-image: url(/fotos/carretera2.gif);
+            background-position: top;
+            background-size: contain;
+            border-radius: 5px;
+
+            .camionVenta {
+                color: $secundario;
+                font-size: 120px;
+            }
         }
-    }
 
-    .fa-instagram {
-        color: rgb(215, 88, 14);
+        .h4Envios {
+            font: {
+                size: 14px;
+                family: 'Poppins', sans-serif;
+            }
 
-        &:hover {
-            transition: all 0.7s;
-            transform: scale(1.3);
+            text-align: center;
+            color: $bg;
         }
-    }
 
-    .fa-whatsapp {
-        color: #04D944;
-        &:hover {
-            transition: all 0.7s;
-            transform: scale(1.3);
+        .parrafo-envios {
+            color: $bg;
+            text-align: center;
+        }
+
+        .tarjetas {
+            display: flex;
+            justify-content: center;
+
+            i {
+                color: $bg;
+                font-size: 35px;
+                text-align: center;
+                padding: 0 10px;
+            }
+        }
+
+        .banco-provincia {
+            font-family: 'Poppins', sans-serif;
+            color: $bg;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 8px;
         }
     }
 }
