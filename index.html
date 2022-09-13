@@ -61,44 +61,46 @@
     </header>
 
     <main>
-        <!-- boton de carrosuel inicia  -->
-        <div id="carouselExampleCaptions" class="carousel slide col-12 col-xl-8 mx-auto col-lg-12 "
-            data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <!-- boton de carrosuel finaliza  -->
+        <div class="contenedor-carousel">
+            <!-- boton de carrosuel inicia  -->
+            <div id="carouselExampleCaptions" class="carousel slide col-12 col-xl-8 mx-auto col-lg-12 "
+                data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <!-- boton de carrosuel finaliza  -->
 
-            <!-- comienza el carrousel -->
-            <div class="carousel-inner">
-                <div class="carousel-item active ">
-                    <img src="./fotos/abdominal pesa.jpg" class="d-block w-100 " alt="mujer haciendo abdominales">
-                    <div class="carousel-caption d-none d-md-block">
+                <!-- comienza el carrousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <img src="./fotos/abdominal pesa.jpg" class="d-block w-100 " alt="mujer haciendo abdominales">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="./fotos/espalda.jpg" class="d-block w-100 " alt="mujer espalda">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="./fotos/2 mujeres ejercicio.jpg" class="d-block w-100 " alt="mujeres ejercicio">
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item ">
-                    <img src="./fotos/espalda.jpg" class="d-block w-100 " alt="mujer espalda">
-                    <div class="carousel-caption d-none d-md-block">
-                    </div>
-                </div>
-                <div class="carousel-item ">
-                    <img src="./fotos/2 mujeres ejercicio.jpg" class="d-block w-100 " alt="mujeres ejercicio">
-                    <div class="carousel-caption d-none d-md-block">
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"
-                data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"
-                data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </button>
         </div>
         <!------ finaliza el carrousel----->
 
@@ -174,44 +176,40 @@
                 </div>
             </div>
         </section>
-        <!--- seccion finaliza --->
+    </main>
 
-        <!-- seccion video inicia -->
-        <h2>Ingreso de calzas</h2>
-        <section class="youtube">
-            <iframe class="video" data-aos="flip-up" src="https://www.youtube.com/embed/PlXYNNMNHzE"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-        </section>
-        <!-- seccion video finaliza -->
-
-        <!-- section envios inicia -->
+    <!-- comienza footer -->
+    <footer>
+        <!-- seccion 3 envios incia -->
         <section class="section3">
             <div class="envios">
-                <marquee behavior="scroll" direction="right" scrollamount="20"><i class="fa-solid fa-truck-fast camionVenta"></i></marquee>
+                <marquee class="camionVenta" behavior="scroll" direction="right" scrollamount="20"><i
+                        class="fa-solid fa-truck-fast"></i></marquee>
             </div>
-            <h2 class="h2envios">Envios a todo el pais</h2>
-            <p class="parrafoEnvios">Nuestros medios de pago</p>
+            <h4 class="h4Envios">Envios a todo el pais</h4>
+            <p class="parrafo-envios">Correo Argentino-OCA-enconmiendas por bus</p>
+            <h4 class="h4Envios">Nuestros medios de pago</h4>
             <div class="tarjetas">
                 <i class="fa-brands fa-cc-visa"></i>
                 <i class="fa-brands fa-cc-mastercard"></i>
                 <i class="fa-brands fa-cc-paypal"></i>
             </div>
+            <h5 class="banco-provincia">Banco Provincia</h5>
+            <p class="parrafo-envios">Contamos con cuenta Dni</p>
+            <h4 class="h4Envios">Seguinos en nuestras redes</h4>
+            <div class="redsocial">
+                <a class="red-link facebook" target="_blank" href="https://es-la.facebook.com/"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a class="red-link instagram" target="_blank" href="https://www.instagram.com/"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a class="red-link whatsapp" target="_blank" href="https://web.whatsapp.com/"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy;2022 creado por Rocha Andres, Todos los derechos reservados</p>
+            </div>
         </section>
-        <!-- section envios finaliza -->
-    </main>
-
-    <!-- comienza footer -->
-    <footer>
-        <p>&copy;2022 Todos los derechos reservados por copyright</p>
-        <div class="redes">
-            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook facebook"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram instagram"></i></a>
-            <a href="https://whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
-        </div>
     </footer>
-    <!-- finaliza footer -->
 
     <!---------- script animacion-------->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

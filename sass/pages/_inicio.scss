@@ -1,3 +1,9 @@
+.contenedor-carousel {
+    background-color: $secundario;
+    width: 100%;
+    border-radius: 5px;
+}
+
 /* -----------------inicia carrousel----------------------- */
 .carousel {
 
@@ -30,7 +36,6 @@
 button {
     position: relative;
     display: inline-block;
-    // cursor: pointer;
     outline: none;
     border: 0;
     vertical-align: middle;
@@ -118,43 +123,5 @@ button {
         }
     }
 }
-/*--finaliza section1--section2--*/ 
 
-/*------------------video youtube pag inicio------------------ */
-.youtube {
-    display: flex;
-    justify-content: center;
-}
-.section3{
-    margin-top: 20px;
-    background-color: $secundario;
-    height: 450px;
-    width: 100%;
-    border-radius: 10px;
-    .envios{
-        i{
-            padding-top: 15px;
-            font-size: 150px ;
-            color: $colorprincipal;
-        }
-    }
-    .h2envios{
-        color: #fff;
-    }
-    .parrafoEnvios{
-        color:#fff;
-        text-align: center;
-        font-family: sans-serif;
-    }
-    .tarjetas{
-        display: flex;
-        justify-content: center;
-        i{
-            color: #fff;
-            font-size: 50px;
-            text-align: center;
-            padding: 0 10px;
-        }
-    }
-    
-}
+/*--finaliza section1--section2--*/

@@ -1,17 +1,14 @@
 /* -------------------pag sport------------- */
 .sport {
     width: 100%;
+    padding: 10px;
     display: grid;
-
     grid: {
-
         template-columns: 1fr;
         template-rows: repeat(8, 200px);
         gap: 15px;
     }
-
-    padding: 10px;
-
+    
     .calzas1 {
         background-image: url(../fotos/prensa\ piernas.jpg);
         @include centrarfotos();

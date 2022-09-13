@@ -7,6 +7,8 @@
     box-shadow: 0 0 5px black;
     background-color: $secundario;
     position: relative;
+    margin-top: 10px;
+    
 }
 
 .nosotros--principal::after {
@@ -46,7 +48,6 @@
     background-color: rgba(0, 0, 0, 0.639);
     border-radius: 7px;
     padding: 5px;
-
     p {
         color: white;
     }
