@@ -31,6 +31,10 @@
 #message {
     @extend #emailAddress;
 }
+.botenflex{
+    display: flex;
+    justify-content: center;
+}
 
 /* ---------------finaliza formulario---------- */
 
@@ -47,10 +51,8 @@
             size: cover;
             position: center;
         }
-
         width: 40%;
         margin-top: 20px;
-
         border: {
             radius: 5px;
             style: groove;
@@ -61,12 +63,10 @@
     .mapa {
         margin-top: 20px;
         width: 40%;
-
         border: {
             radius: 5px;
             style: groove;
             color: rgba(0, 0, 0, 0.545);
         }
-
     }
 }
