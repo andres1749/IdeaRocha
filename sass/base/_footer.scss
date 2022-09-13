@@ -2,39 +2,44 @@
 footer {
     background-color: $secundario;
     width: 100%;
+    height: auto;
 
     /*--secion 3 envios--*/
     .section3 {
-        height: 450px;
+        height: auto;
         width: 100%;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
 
         .envios {
-            background-image: url(/fotos/carretera2.gif);
-            background-position: top;
-            background-size: contain;
-            border-radius: 5px;
+            background: {
+                image: url(/fotos/carretera2.gif);
+                size: contain;
+                position: top;
+            }
 
             .camionVenta {
                 color: $secundario;
-                font-size: 120px;
+                font-size: 100px;
             }
         }
 
         .h4Envios {
+            color: $colorprincipal;
+
             font: {
-                size: 14px;
+                size: 18px;
                 family: 'Poppins', sans-serif;
             }
 
-            text-align: center;
-            color: $bg;
+            text: {
+                align: center;
+                decoration: underline;
+            }
         }
 
         .parrafo-envios {
             color: $bg;
             text-align: center;
+            font-size: 14px;
         }
 
         .tarjetas {
@@ -43,7 +48,7 @@ footer {
 
             i {
                 color: $bg;
-                font-size: 35px;
+                font-size: 30px;
                 text-align: center;
                 padding: 0 10px;
             }
@@ -53,8 +58,53 @@ footer {
             font-family: 'Poppins', sans-serif;
             color: $bg;
             text-align: center;
-            font-size: 18px;
+            font-size: 16px;
             margin-top: 8px;
         }
     }
+
+    .redsocial {
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto 15px;
+
+        .red-link {
+            text-decoration: none;
+            font-size: 26px;
+            width: 35px;
+            height: auto;
+            line-height: 35px;
+            text-align: center;
+            background: $white;
+            border-radius: 50%;
+            color: $secundario;
+            transition: all .4s ease-in-out;
+        }
+
+        .facebook:hover {
+            color: $white;
+            background: linear-gradient(90deg, rgba(43, 32, 219, 0.9332107843137255) 0%, rgba(71, 146, 236, 1) 45%, rgba(0, 134, 255, 0.8995973389355743) 100%);
+            transform: scale(1.2);
+        }
+
+        .instagram:hover {
+            color: $white;
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            transform: scale(1.2);
+        }
+
+        .whatsapp:hover {
+            color: $white;
+            background: radial-gradient(circle, rgba(43, 111, 43, 1) 0%, rgba(15, 196, 48, 1) 50%, rgba(180, 252, 69, 1) 100%);
+            transform: scale(1.2);
+        }
+    }
+
+
+    .copyright {
+        color: $white;
+        text-align: center;
+    }
+
 }

@@ -17,22 +17,7 @@
         font-size: 15px;
     }
 
-    /*--seccion3-inicio- envios--*/
-    .section3 {
-        height: 320px;
-    }
-
-    .parrafo-envios {
-        font-size: 14px;
-    }
-
-    .camionVenta {
-        font-size: 40px !important;
-    }
-
-
     /*---pagina nosotros---*/
-
     .quienes--somos {
         height: 320px;
     }
@@ -43,10 +28,19 @@
 
     /*---footer---*/
     footer {
-        font-size: 15px;
+        .envios {
+            .camionVenta {
+                font-size: 40px !important;
+            }
+        }
 
-        i {
-            font-size: 26px;
+        .redsocial {
+            justify-content: center;
+
+            .red-link {
+                margin: 5px 10px;
+                font-size: 20px;
+            }
         }
     }
 
@@ -79,9 +73,10 @@
 
     /*---footer---*/
     footer {
-        font-size: 15px;
-        i {
-            font-size: 26px;
+        .envios {
+            .camionVenta {
+                font-size: 40px !important;
+            }
         }
     }
 
@@ -108,6 +103,15 @@
         grid: {
             template-columns: 1fr 1fr;
             template-rows: repeat(4, 200px);
+        }
+    }
+
+    /*--footer--*/
+    footer {
+        .envios {
+            .camionVenta {
+                font-size: 60px !important;
+            }
         }
     }
 }
@@ -199,6 +203,14 @@
             }
         }
     }
+
+    footer {
+        .envios {
+            .camionVenta {
+                font-size: 80px !important;
+            }
+        }
+    }
 }
 
 /* ------------------------------notbook de 961px--------------------------------- */
@@ -220,6 +232,7 @@
     /*---page sport---*/
     .sport {
         margin-top: 20px;
+
         grid: {
             template-columns: repeat(4, 1fr);
             template-rows: 300px 300px;

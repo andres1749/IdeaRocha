@@ -110,33 +110,33 @@ h3 {
 footer {
   background-color: #262626;
   width: 100%;
+  height: auto;
   /*--secion 3 envios--*/
 }
 footer .section3 {
-  height: 450px;
+  height: auto;
   width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
 }
 footer .section3 .envios {
   background-image: url(/fotos/carretera2.gif);
-  background-position: top;
   background-size: contain;
-  border-radius: 5px;
+  background-position: top;
 }
 footer .section3 .envios .camionVenta {
   color: #262626;
-  font-size: 120px;
+  font-size: 100px;
 }
 footer .section3 .h4Envios {
-  font-size: 14px;
+  color: #F089A0;
+  font-size: 18px;
   font-family: "Poppins", sans-serif;
   text-align: center;
-  color: #f3f8fa;
+  text-decoration: underline;
 }
 footer .section3 .parrafo-envios {
   color: #f3f8fa;
   text-align: center;
+  font-size: 14px;
 }
 footer .section3 .tarjetas {
   display: flex;
@@ -144,7 +144,7 @@ footer .section3 .tarjetas {
 }
 footer .section3 .tarjetas i {
   color: #f3f8fa;
-  font-size: 35px;
+  font-size: 30px;
   text-align: center;
   padding: 0 10px;
 }
@@ -152,8 +152,45 @@ footer .section3 .banco-provincia {
   font-family: "Poppins", sans-serif;
   color: #f3f8fa;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 8px;
+}
+footer .redsocial {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto 15px;
+}
+footer .redsocial .red-link {
+  text-decoration: none;
+  font-size: 26px;
+  width: 35px;
+  height: auto;
+  line-height: 35px;
+  text-align: center;
+  background: #fff;
+  border-radius: 50%;
+  color: #262626;
+  transition: all 0.4s ease-in-out;
+}
+footer .redsocial .facebook:hover {
+  color: #fff;
+  background: linear-gradient(90deg, rgba(43, 32, 219, 0.9332107843) 0%, rgb(71, 146, 236) 45%, rgba(0, 134, 255, 0.8995973389) 100%);
+  transform: scale(1.2);
+}
+footer .redsocial .instagram:hover {
+  color: #fff;
+  background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
+  transform: scale(1.2);
+}
+footer .redsocial .whatsapp:hover {
+  color: #fff;
+  background: radial-gradient(circle, rgb(43, 111, 43) 0%, rgb(15, 196, 48) 50%, rgb(180, 252, 69) 100%);
+  transform: scale(1.2);
+}
+footer .copyright {
+  color: #fff;
+  text-align: center;
 }
 
 .contenedor-carousel {
@@ -563,16 +600,6 @@ button:hover .button-text {
   h2 {
     font-size: 15px;
   }
-  /*--seccion3-inicio- envios--*/
-  .section3 {
-    height: 320px;
-  }
-  .parrafo-envios {
-    font-size: 14px;
-  }
-  .camionVenta {
-    font-size: 40px !important;
-  }
   /*---pagina nosotros---*/
   .quienes--somos {
     height: 320px;
@@ -581,11 +608,15 @@ button:hover .button-text {
     min-width: 280px;
   }
   /*---footer---*/
-  footer {
-    font-size: 15px;
+  footer .envios .camionVenta {
+    font-size: 40px !important;
   }
-  footer i {
-    font-size: 26px;
+  footer .redsocial {
+    justify-content: center;
+  }
+  footer .redsocial .red-link {
+    margin: 5px 10px;
+    font-size: 20px;
   }
   /*---mapa page contacto---*/
   .sectionmap {
@@ -609,11 +640,8 @@ button:hover .button-text {
     min-width: 360px;
   }
   /*---footer---*/
-  footer {
-    font-size: 15px;
-  }
-  footer i {
-    font-size: 26px;
+  footer .envios .camionVenta {
+    font-size: 40px !important;
   }
   /* mapa page contacto */
   .sectionmap {
@@ -631,6 +659,10 @@ button:hover .button-text {
   .sport {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 200px);
+  }
+  /*--footer--*/
+  footer .envios .camionVenta {
+    font-size: 60px !important;
   }
 }
 @media only screen and (min-width: 650px) and (max-width: 960px) {
@@ -684,6 +716,9 @@ button:hover .button-text {
   .sport .calzas8 {
     grid-column: 4/5;
     grid-row: 4/5;
+  }
+  footer .envios .camionVenta {
+    font-size: 80px !important;
   }
 }
 /* ------------------------------notbook de 961px--------------------------------- */
