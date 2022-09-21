@@ -448,6 +448,14 @@ button:hover .button-text {
 }
 
 /* -----------------------------formulario contacto-------------------------------- */
+#emailAddress, #message, #name, #lastname {
+  border: #26edc2 1px solid;
+  color: rgb(212, 212, 212);
+  background-color: #2A2929;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 #send {
   background-color: #ea94a6;
   font-weight: bold;
@@ -457,14 +465,6 @@ button:hover .button-text {
 #send:hover {
   background-color: #2A2929;
   transition: all 1, 5s;
-}
-
-#emailAddress, #message, #name, #lastname {
-  border: #26edc2 1px solid;
-  color: rgb(212, 212, 212);
-  background-color: #2A2929;
-  border-radius: 5px;
-  padding: 10px;
 }
 
 .botenflex {

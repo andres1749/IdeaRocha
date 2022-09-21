@@ -1,16 +1,4 @@
 /* -----------------------------formulario contacto-------------------------------- */
-#send {
-    background-color: #ea94a6;
-    font-weight: bold;
-    border-color: #fff;
-    box-shadow: 0 0 5px darkcyan;
-
-    &:hover {
-        background-color: #2A2929;
-        transition: all 1, 5s;
-    }
-}
-
 #emailAddress {
     border: #26edc2 1px solid;
     color: rgb(212, 212, 212);
@@ -30,6 +18,18 @@
 
 #message {
     @extend #emailAddress;
+}
+
+#send {
+    background-color: #ea94a6;
+    font-weight: bold;
+    border-color: #fff;
+    box-shadow: 0 0 5px darkcyan;
+
+    &:hover {
+        background-color: #2A2929;
+        transition: all 1, 5s;
+    }
 }
 .botenflex{
     display: flex;
