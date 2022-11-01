@@ -9,30 +9,38 @@
     padding-top: 10px;
 
 }
-
-.card-deck {
+.ancho{
+    justify-content: space-around;
     margin-bottom: 15px;
-
-    .card {
-        border-color: #2A2929;
-    }
+    background-color: #333;
+    width: 100%;
+    margin-left: 2px;
 }
 
-@each $font,
-$colorcitos in $tiendacards {
-    .btn--#{$font} {
+.cardStyle{
+    border-color: #2A2929;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    box-shadow: 0 0 5px #333;
+    padding: 0;
+}
+
+.descripcion{
+    padding-left: 5px;
+    .btn{
         background-color: #333;
-        border: 2px solid $colorcitos;
-        color: $colorcitos;
-        font-family: 'Roboto Mono', monospace;
-        border-radius: $font;
+        margin-bottom: 10px;
+        &:hover{
+            color: $colorprincipal;
+        }
     }
+}
+.fotoCard{
+    width: 100px;
+    height: 60px;
+    border-radius: 5px;
 }
 
-.btn {
-    &:hover {
-        color: #fff;
-        transition: all 1, 8s;
-        font-weight: 500;
-    }
-}
+
+

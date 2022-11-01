@@ -309,89 +309,38 @@ button:hover .button-text {
   padding-top: 10px;
 }
 
-.card-deck {
+.ancho {
+  justify-content: space-around;
   margin-bottom: 15px;
+  background-color: #333;
+  width: 100%;
+  margin-left: 2px;
 }
-.card-deck .card {
+
+.cardStyle {
   border-color: #2A2929;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  box-shadow: 0 0 5px #333;
+  padding: 0;
 }
 
-.btn--10px {
+.descripcion {
+  padding-left: 5px;
+}
+.descripcion .btn {
   background-color: #333;
-  border: 2px solid red;
-  color: red;
-  font-family: "Roboto Mono", monospace;
-  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.descripcion .btn:hover {
+  color: #F089A0;
 }
 
-.btn--11px {
-  background-color: #333;
-  border: 2px solid orange;
-  color: orange;
-  font-family: "Roboto Mono", monospace;
-  border-radius: 11px;
-}
-
-.btn--12px {
-  background-color: #333;
-  border: 2px solid yellow;
-  color: yellow;
-  font-family: "Roboto Mono", monospace;
-  border-radius: 12px;
-}
-
-.btn--13px {
-  background-color: #333;
-  border: 2px solid aqua;
-  color: aqua;
-  font-family: "Roboto Mono", monospace;
-  border-radius: 13px;
-}
-
-.btn--14px {
-  background-color: #333;
-  border: 2px solid rgb(106, 106, 219);
-  color: rgb(106, 106, 219);
-  font-family: "Roboto Mono", monospace;
-  border-radius: 14px;
-}
-
-.btn--15px {
-  background-color: #333;
-  border: 2px solid rgb(9, 194, 9);
-  color: rgb(9, 194, 9);
-  font-family: "Roboto Mono", monospace;
-  border-radius: 15px;
-}
-
-.btn--16px {
-  background-color: #333;
-  border: 2px solid pink;
-  color: pink;
-  font-family: "Roboto Mono", monospace;
-  border-radius: 16px;
-}
-
-.btn--17px {
-  background-color: #333;
-  border: 2px solid coral;
-  color: coral;
-  font-family: "Roboto Mono", monospace;
-  border-radius: 17px;
-}
-
-.btn--18px {
-  background-color: #333;
-  border: 2px solid violet;
-  color: violet;
-  font-family: "Roboto Mono", monospace;
-  border-radius: 18px;
-}
-
-.btn:hover {
-  color: #fff;
-  transition: all 1, 8s;
-  font-weight: 500;
+.fotoCard {
+  width: 100px;
+  height: 60px;
+  border-radius: 5px;
 }
 
 /*------------------------ page nosotros----------------------- */
