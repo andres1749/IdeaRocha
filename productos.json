@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "nombre": "DOS PIEZAS",
+        "descripcion":"maya entera en varios colores disponibles",
+        "talle": "L,S",
+        "precio": 2800,
+        "imagen":"../fotos/bikini-mar (4).jpg",
+        "stock":8
+    },
+    {
+        "id": 2,
+        "nombre": "TOPS",
+        "descripcion":"en varios colores y tallas",
+        "talle": "L,M,S",
+        "precio": 1500,
+        "imagen":"../fotos/training-828741_640.jpg",
+        "stock":3
+    },
+    {
+        "id": 3,
+        "nombre": "SHORT Y REMERA",
+        "descripcion":"conjunto disponible en unico color",
+        "talle": "M,L",
+        "precio": 4200,
+        "imagen":"../fotos/model-2405173_640.jpg",
+        "stock":4
+    },
+    {
+        "id": 4,
+        "nombre": "BIKINI EN DOS PIEZAS HERMOSA !!",
+        "descripcion":"varios colores disponibles",
+        "talle": "unico Nº2",
+        "precio": 3000,
+        "imagen":"../fotos/sand-4359026_1920.jpg",
+        "stock":10
+    },
+    {
+        "id": 5,
+        "nombre": "REMERA 100% ALGODON",
+        "descripcion":"ultimas unidades",
+        "talle": "L",
+        "precio": 800,
+        "imagen":"../fotos/woman-3399464_640.jpg",
+        "stock":5
+    },
+    {
+        "id": 6,
+        "nombre": "BIKINI MULTICOLOR",
+        "descripcion":"conjunto disponible en unico color",
+        "talle": "L,S",
+        "precio": 2200,
+        "imagen":"../fotos/surf-1533278_1920.jpg",
+        "stock":2
+    },
+    {
+        "id": 7,
+        "nombre": "CALZA DEPORTIVA-LYCRA",
+        "descripcion":"calza resistente y comoda para hacer tus actividades",
+        "talle": "L",
+        "precio": 2800,
+        "imagen":"../fotos/mujer mancuerna.jpg",
+        "stock":10
+    },
+    {
+        "id": 8,
+        "nombre": "CONJUNTO TOPS-JOGGINS",
+        "descripcion":"ultimos dos conjuntos disponibles",
+        "talle": "L",
+        "precio": 900,
+        "imagen":"../fotos/adult-640.jpg",
+        "stock":4
+    },
+    {
+        "id": 9,
+        "nombre": "EN UNA PIEZA",
+        "descripcion":"maya entera en varios colores disponibles",
+        "talle": "S",
+        "precio": 3200,
+        "imagen":"../fotos/bikini-mar (1).jpg",
+        "stock":14
+    }
+]

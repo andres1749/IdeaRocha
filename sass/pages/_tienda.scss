@@ -9,20 +9,78 @@
     padding-top: 10px;
 
 }
-.ancho{
+
+.carritoCompras{
+    font-size: 30px;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-top: 10px;
+    background-color: $secundario;
+    color: $colorprincipal;
+}
+
+.numericoCarrito{
+    margin-left: 10px;
+    color: $colorprincipal;
+}
+.colorTable{
+    background-color: $secundario;
+    color: $bg;
+}
+.iconoEliminar{
+    border-radius: 5px;
+    width: 48px;
+    height: auto;
+    cursor: pointer;
+}
+.signosMasMenos{
+    border-radius: 60px;
+    width: 32px;
+    cursor: pointer;
+    
+}
+
+.totalCompra{
+    background-color: $secundario;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 30%;
+    height: 300px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $bg;
+}
+.btnFinalizarCompra{
+    margin-top: 20px;
+    background-color: $colorprincipal;
+    width: 200px;
+    border-radius: 5px;
+    color: $secundario;
+    // font-weight: bold;
+    &:hover{
+        background-color: $secundario;
+        color: $colorprincipal;
+        transition:950ms
+    }
+}
+
+.contenedorCards{
     justify-content: space-around;
     margin-bottom: 15px;
-    background-color: #333;
+    background-color: $secundario;
     width: 100%;
     margin-left: 2px;
 }
 
 .cardStyle{
-    border-color: #2A2929;
     margin-top: 10px;
     margin-bottom: 20px;
     margin-right: 10px;
-    box-shadow: 0 0 5px #333;
+    box-shadow: 0 0 10px $colorprincipal;
     padding: 0;
 }
 

@@ -309,20 +309,79 @@ button:hover .button-text {
   padding-top: 10px;
 }
 
-.ancho {
+.carritoCompras {
+  font-size: 30px;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-top: 10px;
+  background-color: #262626;
+  color: #F089A0;
+}
+
+.numericoCarrito {
+  margin-left: 10px;
+  color: #F089A0;
+}
+
+.colorTable {
+  background-color: #262626;
+  color: #f3f8fa;
+}
+
+.iconoEliminar {
+  border-radius: 5px;
+  width: 48px;
+  height: auto;
+  cursor: pointer;
+}
+
+.signosMasMenos {
+  border-radius: 60px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.totalCompra {
+  background-color: #262626;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 30%;
+  height: 300px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #f3f8fa;
+}
+
+.btnFinalizarCompra {
+  margin-top: 20px;
+  background-color: #F089A0;
+  width: 200px;
+  border-radius: 5px;
+  color: #262626;
+}
+.btnFinalizarCompra:hover {
+  background-color: #262626;
+  color: #F089A0;
+  transition: 950ms;
+}
+
+.contenedorCards {
   justify-content: space-around;
   margin-bottom: 15px;
-  background-color: #333;
+  background-color: #262626;
   width: 100%;
   margin-left: 2px;
 }
 
 .cardStyle {
-  border-color: #2A2929;
   margin-top: 10px;
   margin-bottom: 20px;
   margin-right: 10px;
-  box-shadow: 0 0 5px #333;
+  box-shadow: 0 0 10px #F089A0;
   padding: 0;
 }
 
@@ -397,28 +456,75 @@ button:hover .button-text {
 }
 
 /* -----------------------------formulario contacto-------------------------------- */
-#emailAddress, #message, #name, #lastname {
-  border: #26edc2 1px solid;
-  color: rgb(212, 212, 212);
-  background-color: #2A2929;
+.contenedorFor {
+  background-color: #262626;
   border-radius: 5px;
-  padding: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px 20px;
+}
+.contenedorFor .segundoContenedor {
+  background-color: #f3f8fa;
+  box-shadow: 20px 20px 10px -10px #F089A0;
+  border-radius: 3px;
+  width: 500px;
+  max-width: 100%;
+}
+.contenedorFor .segundoContenedor .encabezadoFor {
+  background-color: rgba(37, 39, 39, 0.219);
+  height: 50px;
+  text-align: center;
+  border-radius: 3px;
+}
+.contenedorFor .segundoContenedor .encabezadoFor .tituloform {
+  padding-top: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#send {
-  background-color: #ea94a6;
-  font-weight: bold;
-  border-color: #fff;
-  box-shadow: 0 0 5px darkcyan;
+#formulario {
+  padding: 30px 28px;
 }
-#send:hover {
-  background-color: #2A2929;
-  transition: all 1, 5s;
+#formulario .form {
+  margin-bottom: 10px;
+  font-weight: 700;
 }
-
-.botenflex {
+#formulario .form input {
+  background-color: rgba(37, 39, 39, 0.219);
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-weight: 400;
+  padding: 8px;
+  border-radius: 3px;
+}
+#formulario .ok {
+  border: 1.5px solid #F089A0;
+}
+#formulario .form, #formulario input:focus {
+  outline: none;
+}
+#formulario .form label {
+  color: #F089A0;
+}
+#formulario .contenedorBtn {
   display: flex;
   justify-content: center;
+}
+#formulario .contenedorBtn .btnEnviar {
+  background-color: #262626;
+  color: white;
+  border: 1px solid rgb(54, 224, 137);
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+#formulario #mensaje {
+  width: 100%;
+  height: 90px;
+}
+#formulario #mensaje:focus {
+  outline: none;
 }
 
 /* ---------------finaliza formulario---------- */

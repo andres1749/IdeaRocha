@@ -58,76 +58,54 @@
         </nav>
     </header>
     <main>
-        <div class="container py-4">
-
-            <!-- comienzo formulario -->
-            <form id="contactForm">
-
-                <!-- Nombre -->
-                <div class="mb-3">
-                    <label class="form-label" for="name">Nombre:</label>
-                    <input class="form-control" id="name" type="text" placeholder="Nombre"
-                        data-sb-validations="required" />
-                    <div class="invalid-feedback" data-sb-feedback="name:required">El nombre es requerido.</div>
+        <!-- inicia formulario -->
+        <div class="contenedorFor">
+            <div class="segundoContenedor">
+                <div class="encabezadoFor">
+                    <h4 class="tituloform">Contactenos</h4>
                 </div>
-                <!--  -->
-
-                <!-- Apellido -->
-                <div class="mb-3">
-                    <label class="form-label" for="lastname">Apellido:</label>
-                    <input class="form-control" id="lastname" type="text" placeholder="Apellido"
-                        data-sb-validations="required" />
-                    <div class="invalid-feedback" data-sb-feedback="lastname:required">El nombre es requerido.</div>
-                </div>
-                <!--  -->
-
-                <!-- direccion de email -->
-                <div class="mb-3">
-                    <label class="form-label" for="emailAddress">Direccion de email:</label>
-                    <input class="form-control" id="emailAddress" type="email" placeholder="Direccion de email"
-                        data-sb-validations="required, email" />
-                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">La direccion de email es
-                        requerida.
+                <form id="formulario" action="">
+                    <div class="form">
+                        <label for="nombre">Nombres</label>
+                        <input id="nombre" type="text" placeholder="Ingrese su nombre">
+                        <p id="nombreError"></p>
                     </div>
-                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">La direccion de email no es
-                        valida.</div>
-                </div>
-                <!--  -->
-
-                <!-- comentario -->
-                <div class="mb-3">
-                    <label class="form-label" for="message">Mensaje:</label>
-                    <textarea class="form-control" id="message" type="text" placeholder="Dejanos tu mensaje"
-                        style="height: 10rem;" data-sb-validations="required"></textarea>
-                    <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere un mensaje.</div>
-                </div>
-                <!--  -->
-
-                <!-- enviado -->
-                <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center mb-3">Mensaje enviado.</div>
-                </div>
-
-                <!-- mensaje de error -->
-                <div class="d-none" id="submitErrorMessage">
-                    <Error class="text-center text-danger mb-3">Error al mandar el mensaje.
-                </div>
-                <!-- boton enviar -->
-                <div class="botenflex">
-                    <div>
-                        <button class="btn btn-primary btn-md" id="send" type="submit">Enviar</button>
+                    <div class="form">
+                        <label for="apellido">Apellido</label>
+                        <input id="apellido" type="text" placeholder="Ingrese su apellido">
+                        <p id="apellidoError"></p>
                     </div>
-                </div>
-            </form>
-            <!-- finaliza formulario -->
+                    <div class="form">
+                        <label for="numero">Numero de telefono</label>
+                        <input id="numero" type="text" class="" placeholder="Ingrese su numero">
+                        <p id="numeroError"></p>
+                    </div>
+                    <div class="form">
+                        <label for="email">email</label>
+                        <input id="email" type="text" placeholder="Ingrese su email">
+                        <p id="emailError" class="parrafoContacto"></p>
+                    </div>
+                    <div class="form">
+                        <label for="mensaje">Deje su mensaje</label>
+                        <textarea name="mensaje" id="mensaje"></textarea>
+                        <p id="mensajeError"></p>
+                    </div>
+                    <div class="contenedorBtn">
+                        <button class="btnEnviar">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
         </div>
-
+        <!-- finaliza formulario -->
+        <!-- inicia mapa -->
         <div class="sectionmap">
             <div class="correr"></div>
             <iframe class="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12480.715981215939!2d-58.74880979999999!3d-38.5526896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958fbd770ad2e66f%3A0x69c61f7511cb6223!2sAXION%20energy!5e0!3m2!1ses-419!2sar!4v1657752033545!5m2!1ses-419!2sar"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+        <!-- finaliza mapa -->
     </main>
     <!-- comienza footer -->
     <footer>
@@ -161,7 +139,7 @@
             </div>
         </section>
     </footer>
-    <!-------------script--------- -->
+    <!-------------script boostrap--------- -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -171,6 +149,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
         integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
         crossorigin="anonymous"></script>
+    
+    <!-- script JS -->
+    <script src="../formulario.js"></script>
 </body>
 
 </html>
