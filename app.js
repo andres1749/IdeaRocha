@@ -76,7 +76,7 @@ function renderizarItemCarrito (){
         <tr>
             <td>${cards.nombre}</td>
             <td>$${cards.precio}</td>
-            <td><img class="signosMasMenos" src="../fotos/icons8-menos-48.png" alt="signo menos" onclick="cambioCantidadCarro('resta',${cards.id})"> </img>  ${cards.cantidad}  <img class="signosMasMenos" src="/fotos/icons8-más-48.png" alt="signo mas" onclick="cambioCantidadCarro('suma',${cards.id})"></img></td>
+            <td><img class="signosMasMenos" src="../fotos/icons8-menos-48.png" alt="signo menos" onclick="cambioCantidadCarro('resta',${cards.id})"> </img>  ${cards.cantidad}  <img class="signosMasMenos" src="../fotos/icons8-más-48.png" alt="signo mas" onclick="cambioCantidadCarro('suma',${cards.id})"></img></td>
             <td onclick="eliminar(${cards.id})"><img class="iconoEliminar" src="../fotos/eliminarProd.png" alt=""></td>
         </tr>
         `
